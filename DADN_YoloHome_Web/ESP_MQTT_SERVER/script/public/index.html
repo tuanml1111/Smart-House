@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Adafruit IO Data</title>
+  <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+  <h1>Realtime Feed Data</h1>
+  <pre id="output"></pre>
+
+  <script>
+    const socket = io();
+    const output = document.getElementById('output');
+
+    socket.on('newData', (payload) => {
+      output.textContent += `${payload.feed}: ${JSON.stringify(payload.data[0])}\n`;
+    });
+  </script>
+</body>
+</html>

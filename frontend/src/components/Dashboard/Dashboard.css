@@ -1,0 +1,218 @@
+.dashboard {
+    padding: 20px;
+  }
+  
+  .dashboard h1 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  .dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+  }
+  
+  .card h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #2c3e50;
+  }
+  
+  /* Device Stats */
+  .stats {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .stat {
+    text-align: center;
+    flex: 1;
+  }
+  
+  .stat-value {
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  
+  .stat-label {
+    color: #7f8c8d;
+    font-size: 14px;
+  }
+  
+  .stat-online {
+    color: #27ae60;
+  }
+  
+  .stat-offline {
+    color: #e74c3c;
+  }
+  
+  /* Sensor Readings */
+  .readings {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .reading {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  .reading-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    color: white;
+  }
+  
+  .temp-icon {
+    background-color: #e74c3c;
+  }
+  
+  .humidity-icon {
+    background-color: #3498db;
+  }
+  
+  .motion-icon {
+    background-color: #95a5a6;
+  }
+  
+  .motion-icon.active {
+    background-color: #f39c12;
+  }
+  
+  .reading-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .reading-value {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .reading-value.active {
+    color: #f39c12;
+  }
+  
+  .reading-label {
+    color: #7f8c8d;
+    font-size: 14px;
+  }
+  
+  /* Alert List */
+  .alert-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .alert {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #ecf0f1;
+  }
+  
+  .alert:last-child {
+    border-bottom: none;
+  }
+  
+  .alert-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    color: #7f8c8d;
+  }
+  
+  .alert-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .alert-message {
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  
+  .alert-time {
+    color: #7f8c8d;
+    font-size: 12px;
+  }
+  
+  .alert-status {
+    margin-left: 10px;
+  }
+  
+  .alert-status span {
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+  }
+  
+  .alert.active .alert-status span {
+    background-color: #fff5e6;
+    color: #f39c12;
+  }
+  
+  .alert.resolved .alert-status span {
+    background-color: #eafaf1;
+    color: #27ae60;
+  }
+  
+  .no-alerts {
+    color: #7f8c8d;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .card-footer {
+    margin-top: 15px;
+    text-align: right;
+  }
+  
+  .view-all {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
+  .view-all:hover {
+    text-decoration: underline;
+  }
+  
+  /* Loading Indicator */
+  .loading-indicator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    color: #7f8c8d;
+    font-size: 18px;
+  }
