@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import SensorController from '../../controllers/SensorController';
 import DeviceController from '../../controllers/DeviceController';
+import PredictionChart from '../predictionChart';
 import './Dashboard.css';
 
 const Dashboard = () => {
@@ -119,6 +120,12 @@ const Dashboard = () => {
               </div>
             </div>
           </div>
+        </div>
+        
+        {/* Temperature Prediction Card */}
+        <div className="card">
+          <h2>AI Temperature Prediction</h2>
+          <PredictionChart />
         </div>
         
         {/* Recent Alerts */}

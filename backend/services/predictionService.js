@@ -1,98 +1,103 @@
-const SensorModel = require('../models/sensorModel');
+// backend/services/predictionService.js
+const path = require('path');
+const { spawn } = require('child_process');
+const logger = require('../utils/logger');
 const DeviceModel = require('../models/deviceModel');
 const mqttService = require('./mqttService');
-const logger = require('../utils/logger');
+const predictionController = require('../controllers/predictionController');
 
 class PredictionService {
-  // Predict if the temperature will exceed the threshold
-  async predictTemperature(currentTemperature) {
+  constructor() {
+    this.predictionInterval = null;
+    this.isRunning = false;
+    this.threshold = 30; // Temperature threshold in Celsius
+  }
+
+  // Start the prediction service
+  start(intervalMinutes = 5) {
+    if (this.isRunning) {
+      logger.info('Prediction service is already running');
+      return;
+    }
+
+    logger.info(`Starting temperature prediction service with ${intervalMinutes} minute interval`);
+    this.isRunning = true;
+    
+    // Run prediction once immediately
+    this.runPrediction();
+    
+    // Set up interval for regular predictions
+    this.predictionInterval = setInterval(() => {
+      this.runPrediction();
+    }, intervalMinutes * 60 * 1000);
+  }
+
+  // Stop the prediction service
+  stop() {
+    if (!this.isRunning) return;
+    
+    clearInterval(this.predictionInterval);
+    this.isRunning = false;
+    logger.info('Temperature prediction service stopped');
+  }
+
+  // Run the Python prediction script
+  async runPrediction() {
     try {
-      // This is a simple prediction model
-      // In a real-world scenario, you would use a more sophisticated ML model
+      logger.info('Running temperature prediction for next hour');
       
-      // Get historical temperature data
-      const temperatureSensorId = 1; // Assume ID 1 is the temperature sensor
-      const historicalData = await SensorModel.getSensorData(temperatureSensorId, 24);
+      // Path to the Python script that runs the model
+      const scriptPath = path.join(__dirname, '../../AI/predict.py');
       
-      if (historicalData.length < 5) {
-        logger.info('Not enough historical data for prediction');
-        return {
-          willExceedThreshold: false,
-          predictedTemperature: currentTemperature,
-          confidence: 0
-        };
-      }
+      // Spawn a Python process
+      const pythonProcess = spawn('python', [scriptPath]);
       
-      // Calculate temperature trend
-      const recentReadings = historicalData.slice(0, 5);
-      const trend = this.calculateTrend(recentReadings.map(d => d.svalue));
+      let predictionData = '';
       
-      // Predict future temperature
-      const predictedTemperature = currentTemperature + trend;
+      // Collect data from script
+      pythonProcess.stdout.on('data', (data) => {
+        predictionData += data.toString();
+      });
       
-      // Check if it will exceed threshold
-      const threshold = 30; // 30°C threshold
-      const willExceedThreshold = predictedTemperature > threshold;
+      // Handle completion
+      pythonProcess.on('close', async (code) => {
+        if (code !== 0) {
+          logger.error(`Prediction process exited with code ${code}`);
+          return;
+        }
+        
+        try {
+          // Parse the prediction result
+          const prediction = JSON.parse(predictionData);
+          logger.info(`Prediction result: ${JSON.stringify(prediction)}`);
+          
+          // Store the prediction
+          await predictionController.storePrediction(prediction);
+          
+          // Check if the maximum predicted temperature exceeds threshold
+          if (prediction.max_temperature > this.threshold && prediction.max_confidence > 0.7) {
+            logger.info(`Predicted maximum temperature (${prediction.max_temperature}°C) exceeds threshold (${this.threshold}°C) with confidence ${prediction.max_confidence}`);
+            await this.activateCooling();
+          }
+        } catch (parseError) {
+          logger.error(`Error parsing prediction data: ${parseError.message}`);
+        }
+      });
       
-      // Calculate confidence based on data variance
-      const values = recentReadings.map(d => d.svalue);
-      const variance = this.calculateVariance(values);
-      const confidence = Math.max(0, Math.min(1, 1 - variance / 10));
+      // Handle errors
+      pythonProcess.stderr.on('data', (data) => {
+        logger.error(`Prediction script error: ${data.toString()}`);
+      });
       
-      // If temperature will exceed threshold with high confidence, turn on fan
-      if (willExceedThreshold && confidence > 0.7) {
-        await this.activateCooling();
-      }
-      
-      return {
-        willExceedThreshold,
-        predictedTemperature,
-        confidence,
-        threshold
-      };
     } catch (error) {
-      logger.error(`Error predicting temperature: ${error.message}`);
-      return {
-        willExceedThreshold: false,
-        predictedTemperature: currentTemperature,
-        confidence: 0
-      };
+      logger.error(`Error running prediction: ${error.message}`);
     }
   }
-  
-  // Calculate temperature trend
-  calculateTrend(values) {
-    if (values.length < 2) return 0;
-    
-    // Simple linear regression to get slope
-    const n = values.length;
-    const indices = Array.from({ length: n }, (_, i) => i);
-    
-    const sumX = indices.reduce((a, b) => a + b, 0);
-    const sumY = values.reduce((a, b) => a + b, 0);
-    const sumXY = indices.reduce((sum, x, i) => sum + x * values[i], 0);
-    const sumXX = indices.reduce((sum, x) => sum + x * x, 0);
-    
-    const slope = (n * sumXY - sumX * sumY) / (n * sumXX - sumX * sumX);
-    
-    return slope;
-  }
-  
-  // Calculate variance of values
-  calculateVariance(values) {
-    if (values.length < 2) return 0;
-    
-    const mean = values.reduce((a, b) => a + b, 0) / values.length;
-    const squaredDiffs = values.map(v => Math.pow(v - mean, 2));
-    const variance = squaredDiffs.reduce((a, b) => a + b, 0) / values.length;
-    
-    return variance;
-  }
-  
-  // Activate cooling system (turn on fan)
+
+  // Activate cooling devices (fans)
   async activateCooling() {
     try {
-      // Find fan device(s)
+      // Find fan devices
       const fans = await DeviceModel.getDevicesByType('fan');
       
       if (fans.length === 0) {

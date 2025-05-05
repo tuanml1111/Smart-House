@@ -5,7 +5,8 @@ const morgan = require('morgan');
 const path = require('path');
 const errorMiddleware = require('./middleware/errorMiddleware');
 const mqttService = require('./services/mqttService');
-
+const predictionRoutes = require('./routes/predictionRoutes');
+const predictionService = require('./services/predictionService');
 // Load environment variables
 dotenv.config({ path: './config/.env' });
 
@@ -37,6 +38,7 @@ app.use('/api/devices', deviceRoutes);
 app.use('/api/sensors', sensorRoutes);
 app.use('/api/alerts', alertRoutes);
 app.use('/api/alert-config', alertConfigRoutes);
+app.use('/api/predictions', predictionRoutes);
 
 // Test endpoint to manually trigger alert check
 app.get('/api/test/check-alerts', async (req, res) => {
@@ -73,6 +75,10 @@ mqttService.connect();
 setTimeout(() => {
   console.log('Starting alert monitor service...');
   alertMonitorService.start();
+  
+  // Start temperature prediction service
+  console.log('Starting temperature prediction service...');
+  predictionService.start(15); // Run prediction every 15 minutes
 }, 5000);
 
 // Start server
