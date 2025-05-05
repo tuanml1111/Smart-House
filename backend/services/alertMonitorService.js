@@ -3,13 +3,14 @@ const SensorModel = require('../models/sensorModel');
 const AlertConfigModel = require('../models/alertConfigModel');
 const AlertModel = require('../models/alertModel');
 const DeviceModel = require('../models/deviceModel');
+const db = require('../config/db'); // Add proper db import
 const logger = require('../utils/logger');
 
 class AlertMonitorService {
   constructor() {
     this.isRunning = false;
-    this.checkInterval = '*/1 * * * *'; // Mỗi 1 phút
-    this.lastCheckedValues = {}; // Lưu các giá trị trước đó
+    this.checkInterval = '*/1 * * * *'; // Every 1 minute
+    this.lastCheckedValues = {}; // Store previous values
   }
 
   start() {
@@ -18,7 +19,7 @@ class AlertMonitorService {
       return;
     }
 
-    // Lên lịch kiểm tra mỗi phút
+    // Schedule check every minute
     this.job = cron.schedule(this.checkInterval, async () => {
       try {
         await this.checkThresholds();
@@ -43,14 +44,14 @@ class AlertMonitorService {
     logger.info('Checking sensor values against alert thresholds');
 
     try {
-      // Lấy tất cả cấu hình cảnh báo đang hoạt động
-      const allConfigs = await AlertConfigModel.getAllActiveConfigs();
+      // Get all active alert configurations
+      const allConfigs = await this.getAllActiveConfigs();
       if (!allConfigs || allConfigs.length === 0) {
         logger.info('No active alert configurations found');
         return;
       }
 
-      // Nhóm cấu hình theo loại cảm biến
+      // Group configurations by sensor type
       const configsByType = {};
       allConfigs.forEach(config => {
         if (!configsByType[config.sensor_type]) {
@@ -59,19 +60,23 @@ class AlertMonitorService {
         configsByType[config.sensor_type].push(config);
       });
 
-      // Lấy tất cả cảm biến
+      // Get all sensors
       const sensors = await SensorModel.getAllSensors();
+      logger.info(`Found ${sensors.length} sensors to check`);
       
-      // Kiểm tra từng cảm biến
+      // Check each sensor
       for (const sensor of sensors) {
-        // Bỏ qua cảm biến không có cấu hình cảnh báo
+        // Skip sensors without alert configuration
         if (!configsByType[sensor.sensor_type]) {
           continue;
         }
 
-        // Lấy giá trị mới nhất
+        logger.info(`Checking sensor ${sensor.sensor_id} (${sensor.sensor_type})`);
+        
+        // Get latest value
         const latestData = await SensorModel.getLatestSensorData(sensor.sensor_id);
         if (!latestData) {
+          logger.info(`No data found for sensor ${sensor.sensor_id}`);
           continue;
         }
 
@@ -79,35 +84,43 @@ class AlertMonitorService {
         const sensorKey = `${sensor.sensor_id}`;
         const previousValue = this.lastCheckedValues[sensorKey];
         
-        // Lưu giá trị hiện tại cho lần kiểm tra tiếp theo
+        // Store current value for next check
         this.lastCheckedValues[sensorKey] = sensorValue;
 
-        // Xác định thiết bị liên quan đến cảm biến này
+        logger.info(`Sensor ${sensor.sensor_id} value: ${sensorValue} (previous: ${previousValue})`);
+
+        // Try to find related device
         const deviceId = await this.findDeviceForSensor(sensor.sensor_id);
         if (!deviceId) {
-          logger.warn(`No device found for sensor ${sensor.sensor_id}`);
-          continue;
+          // If no device found, use a default device ID (e.g., 1)
+          logger.warn(`No device found for sensor ${sensor.sensor_id}, using default ID 1`);
         }
 
-        // Kiểm tra từng cấu hình cảnh báo cho loại cảm biến này
+        // Check each alert configuration for this sensor type
         for (const config of configsByType[sensor.sensor_type]) {
-          // Chỉ tạo cảnh báo nếu thay đổi trạng thái từ bình thường sang vượt ngưỡng
-          // hoặc từ vượt ngưỡng này sang vượt ngưỡng khác
+          logger.info(`Checking against config: min=${config.min_value}, max=${config.max_value}`);
+          
+          // Only create alert when state changes from normal to threshold exceeded
+          // or from one threshold to another
           if (previousValue !== undefined) {
-            // Kiểm tra ngưỡng dưới
-            if (sensorValue < config.min_value && (previousValue >= config.min_value || previousValue < config.min_value && previousValue > config.max_value)) {
-              await this.createAlert(deviceId, sensor, 'Low', sensorValue, config.min_value);
+            // Check lower threshold
+            if (sensorValue < config.min_value && (previousValue >= config.min_value || (previousValue < config.min_value && previousValue > config.max_value))) {
+              logger.info(`Low threshold alert triggered: ${sensorValue} < ${config.min_value}`);
+              await this.createAlert(deviceId || 1, sensor, 'Low', sensorValue, config.min_value);
             }
-            // Kiểm tra ngưỡng trên
-            else if (sensorValue > config.max_value && (previousValue <= config.max_value || previousValue > config.max_value && previousValue < config.min_value)) {
-              await this.createAlert(deviceId, sensor, 'High', sensorValue, config.max_value);
+            // Check upper threshold
+            else if (sensorValue > config.max_value && (previousValue <= config.max_value || (previousValue > config.max_value && previousValue < config.min_value))) {
+              logger.info(`High threshold alert triggered: ${sensorValue} > ${config.max_value}`);
+              await this.createAlert(deviceId || 1, sensor, 'High', sensorValue, config.max_value);
             }
           } else {
-            // Lần đầu kiểm tra
+            // First check
             if (sensorValue < config.min_value) {
-              await this.createAlert(deviceId, sensor, 'Low', sensorValue, config.min_value);
+              logger.info(`Initial low threshold alert triggered: ${sensorValue} < ${config.min_value}`);
+              await this.createAlert(deviceId || 1, sensor, 'Low', sensorValue, config.min_value);
             } else if (sensorValue > config.max_value) {
-              await this.createAlert(deviceId, sensor, 'High', sensorValue, config.max_value);
+              logger.info(`Initial high threshold alert triggered: ${sensorValue} > ${config.max_value}`);
+              await this.createAlert(deviceId || 1, sensor, 'High', sensorValue, config.max_value);
             }
           }
         }
@@ -120,7 +133,7 @@ class AlertMonitorService {
 
   async findDeviceForSensor(sensorId) {
     try {
-      // Tìm mối quan hệ giữa thiết bị và cảm biến trong bảng equipped_with
+      // Try to find relationship between devices and sensors in equipped_with table
       const query = `
         SELECT device_id FROM equipped_with 
         WHERE sensor_id = $1 
@@ -132,11 +145,11 @@ class AlertMonitorService {
         return result.rows[0].device_id;
       }
       
-      // Nếu không tìm thấy, trả về thiết bị mặc định (ví dụ: ID 1)
-      return 1;
+      // If not found, return null and let caller handle it
+      return null;
     } catch (error) {
       logger.error(`Error finding device for sensor: ${error.message}`);
-      return 1; // Trả về ID mặc định trong trường hợp lỗi
+      return null;
     }
   }
 
@@ -154,26 +167,30 @@ class AlertMonitorService {
         amessage: message,
         status: 'pending'
       });
+      
+      logger.info('Alert created successfully');
     } catch (error) {
       logger.error(`Error creating alert: ${error.message}`);
     }
   }
-}
-
-// Thêm phương thức vào AlertConfigModel để lấy tất cả cấu hình đang hoạt động
-AlertConfigModel.getAllActiveConfigs = async function() {
-  try {
-    const query = `
-      SELECT config_id, user_id, sensor_type, min_value, max_value, is_active
-      FROM alert_config
-      WHERE is_active = true
-    `;
-    
-    const result = await db.query(query);
-    return result.rows;
-  } catch (error) {
-    throw new Error(`Error getting active alert configurations: ${error.message}`);
+  
+  // Get all active alert configurations
+  async getAllActiveConfigs() {
+    try {
+      const query = `
+        SELECT config_id, user_id, sensor_type, min_value, max_value, is_active
+        FROM alert_config
+        WHERE is_active = true
+      `;
+      
+      const result = await db.query(query);
+      logger.info(`Found ${result.rows.length} active alert configurations`);
+      return result.rows;
+    } catch (error) {
+      logger.error(`Error getting active alert configurations: ${error.message}`);
+      throw new Error(`Error getting active alert configurations: ${error.message}`);
+    }
   }
-};
+}
 
 module.exports = new AlertMonitorService();

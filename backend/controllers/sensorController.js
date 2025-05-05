@@ -267,4 +267,40 @@ exports.getAllLatestReadings = async (req, res, next) => {
     console.error('Error getting sensor readings:', error);
     next(error);
   }
+  exports.addManualSensorData = async (req, res, next) => {
+    try {
+      const { sensor_type, value } = req.body;
+      
+      // Validate input
+      if (!sensor_type || value === undefined) {
+        return res.status(400).json({
+          success: false,
+          message: 'Please provide sensor_type and value'
+        });
+      }
+      
+      // Find sensor by type
+      const sensor = await SensorModel.getSensorByType(sensor_type);
+      if (!sensor) {
+        return res.status(404).json({
+          success: false,
+          message: `Sensor with type ${sensor_type} not found`
+        });
+      }
+      
+      console.log(`Adding manual data for ${sensor_type}: ${value}`);
+      
+      // Insert sensor data (trigger will automatically check thresholds)
+      const data = await SensorModel.insertSensorData(sensor.sensor_id, value);
+      
+      res.status(201).json({
+        success: true,
+        data: data,
+        message: `${sensor_type} reading added successfully. Any threshold violations will automatically generate alerts.`
+      });
+    } catch (error) {
+      console.error('Error adding manual sensor data:', error);
+      next(error);
+    }
+  };
 };

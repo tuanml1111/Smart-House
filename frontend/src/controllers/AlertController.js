@@ -3,6 +3,8 @@ import apiService from '../services/apiService';
 class AlertController {
   static async getAllAlerts(limit = 50, status = null) {
     try {
+      console.log('Fetching alerts with params:', { limit, status });
+      
       // Build query parameters
       let queryParams = '';
       if (limit) {
@@ -13,7 +15,10 @@ class AlertController {
       }
       
       const url = queryParams ? `/alerts?${queryParams}` : '/alerts';
+      console.log('Requesting URL:', url);
+      
       const response = await apiService.get(url);
+      console.log('Alerts response:', response.data);
       
       if (response.data && response.data.data) {
         return response.data.data.map(alert => ({
@@ -60,6 +65,7 @@ class AlertController {
   
   static async updateAlertStatus(id, status) {
     try {
+      console.log(`Updating alert ${id} status to ${status}`);
       const response = await apiService.put(`/alerts/${id}`, { status });
       
       if (response.data && response.data.data) {
@@ -84,6 +90,7 @@ class AlertController {
   
   static async resolveAllAlerts() {
     try {
+      console.log('Resolving all pending alerts');
       const response = await apiService.put('/alerts/resolve-all');
       
       if (response.data && response.data.success) {
@@ -100,6 +107,31 @@ class AlertController {
       throw error;
     }
   }
+
+  static async getRecentAlerts(limit = 5) {
+    try {
+      console.log(`Fetching ${limit} recent alerts`);
+      const response = await apiService.get(`/alerts/recent?limit=${limit}`);
+      
+      if (response.data && response.data.data) {
+        return response.data.data.map(alert => ({
+          id: alert.alert_id,
+          type: alert.alert_type.toLowerCase(),
+          message: alert.amessage,
+          timestamp: alert.alerted_time,
+          status: alert.status
+        }));
+      }
+      
+      // If API returns no data, return empty array
+      return [];
+    } catch (error) {
+      console.error('Error fetching recent alerts:', error);
+      
+      // Return empty array in case of error to prevent UI from breaking
+      return [];
+    }
+  }
 }
 
-export default AlertController; 
+export default AlertController;

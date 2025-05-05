@@ -26,9 +26,12 @@ class AlertModel {
         values.push(limit);
       }
       
+      console.log('Executing query:', query, 'with values:', values);
       const result = await db.query(query, values);
+      console.log(`Retrieved ${result.rows.length} alerts`);
       return result.rows;
     } catch (error) {
+      console.error(`Error getting alerts: ${error.message}`);
       throw new Error(`Error getting alerts: ${error.message}`);
     }
   }
@@ -49,12 +52,15 @@ class AlertModel {
       
       return result.rows[0];
     } catch (error) {
+      console.error(`Error getting alert by ID: ${error.message}`);
       throw new Error(`Error getting alert by ID: ${error.message}`);
     }
   }
   
   static async createAlert(alertData) {
     try {
+      console.log('Creating alert with data:', alertData);
+      
       const query = `
         INSERT INTO alert (device_id, sensor_id, alert_type, amessage, status)
         VALUES ($1, $2, $3, $4, $5)
@@ -69,9 +75,12 @@ class AlertModel {
         alertData.status || 'pending'
       ];
       
+      console.log('Executing query with values:', values);
       const result = await db.query(query, values);
+      console.log('Alert created:', result.rows[0]);
       return result.rows[0];
     } catch (error) {
+      console.error(`Error creating alert: ${error.message}`);
       throw new Error(`Error creating alert: ${error.message}`);
     }
   }
@@ -122,9 +131,27 @@ class AlertModel {
       `;
       
       const result = await db.query(query);
+      console.log(`Resolved ${result.rows.length} alerts`);
       return result.rows.length;
     } catch (error) {
       throw new Error(`Error resolving all alerts: ${error.message}`);
+    }
+  }
+  
+  // Get recent alerts for dashboard
+  static async getRecentAlerts(limit = 5) {
+    try {
+      const query = `
+        SELECT a.alert_id, a.device_id, a.sensor_id, a.alert_type, a.amessage, a.alerted_time, a.status
+        FROM alert a
+        ORDER BY a.alerted_time DESC
+        LIMIT $1
+      `;
+      
+      const result = await db.query(query, [limit]);
+      return result.rows;
+    } catch (error) {
+      throw new Error(`Error getting recent alerts: ${error.message}`);
     }
   }
 }

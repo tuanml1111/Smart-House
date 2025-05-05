@@ -10,8 +10,10 @@ class SensorModel {
       `;
       
       const result = await db.query(query);
+      console.log(`Found ${result.rows.length} sensors`);
       return result.rows;
     } catch (error) {
+      console.error(`Error getting all sensors: ${error.message}`);
       throw new Error(`Error getting all sensors: ${error.message}`);
     }
   }
@@ -33,6 +35,29 @@ class SensorModel {
       return result.rows[0];
     } catch (error) {
       throw new Error(`Error getting sensor by ID: ${error.message}`);
+    }
+  }
+  
+  static async getSensorByType(type) {
+    try {
+      const query = `
+        SELECT s.sensor_id, s.sensor_type, s.model, s.unit, s.description
+        FROM sensor s
+        WHERE LOWER(s.sensor_type) = LOWER($1)
+        LIMIT 1
+      `;
+      
+      const result = await db.query(query, [type]);
+      
+      if (result.rows.length === 0) {
+        console.log(`No sensor found with type: ${type}`);
+        return null;
+      }
+      
+      return result.rows[0];
+    } catch (error) {
+      console.error(`Error getting sensor by type: ${error.message}`);
+      throw new Error(`Error getting sensor by type: ${error.message}`);
     }
   }
   
@@ -126,15 +151,22 @@ class SensorModel {
       const result = await db.query(query, [sensorId, limit]);
       return result.rows;
     } catch (error) {
+      console.error(`Error getting sensor data: ${error.message}`);
       throw new Error(`Error getting sensor data: ${error.message}`);
     }
   }
   
   static async getLatestSensorData(sensorId) {
     try {
-      // Thay đổi câu truy vấn để tránh lỗi cú pháp
+      console.log(`Getting latest data for sensor ID: ${sensorId}`);
+      
+      // Ensure that numerical values are properly formatted
       const query = `
-        SELECT sd.data_id, sd.sensor_id, sd.svalue, sd.recorded_time
+        SELECT 
+          sd.data_id, 
+          sd.sensor_id, 
+          CAST(sd.svalue AS FLOAT) AS svalue,
+          sd.recorded_time
         FROM sensor_data sd
         WHERE sd.sensor_id = $1
         ORDER BY sd.recorded_time DESC
@@ -144,15 +176,12 @@ class SensorModel {
       const result = await db.query(query, [sensorId]);
       
       if (result.rows.length === 0) {
+        console.log(`No data found for sensor ID: ${sensorId}`);
         return null;
       }
       
-      // Đảm bảo svalue luôn là số sau khi lấy dữ liệu
       const data = result.rows[0];
-      if (data && data.svalue !== null && data.svalue !== undefined) {
-        // Ép kiểu về số sau khi lấy dữ liệu từ database, không trong câu truy vấn
-        data.svalue = parseFloat(data.svalue);
-      }
+      console.log(`Latest data for sensor ${sensorId}: ${data.svalue} (${typeof data.svalue})`);
       
       return data;
     } catch (error) {
@@ -166,26 +195,97 @@ class SensorModel {
       let query;
       let values;
       
+      // Ensure value is a number
+      const numericValue = parseFloat(value);
+      
+      if (isNaN(numericValue)) {
+        throw new Error(`Invalid sensor value: ${value}`);
+      }
+      
       if (timestamp) {
         query = `
           INSERT INTO sensor_data (sensor_id, svalue, recorded_time)
           VALUES ($1, $2, $3)
           RETURNING *
         `;
-        values = [sensorId, value, timestamp];
+        values = [sensorId, numericValue, timestamp];
       } else {
         query = `
           INSERT INTO sensor_data (sensor_id, svalue)
           VALUES ($1, $2)
           RETURNING *
         `;
-        values = [sensorId, value];
+        values = [sensorId, numericValue];
       }
       
+      console.log(`Inserting sensor data: sensorId=${sensorId}, value=${numericValue}`);
       const result = await db.query(query, values);
+      console.log(`Sensor data inserted successfully:`, result.rows[0]);
+      
+      // Không cần kiểm tra ngưỡng ở đây nữa vì database trigger sẽ tự động làm
+      
       return result.rows[0];
     } catch (error) {
+      console.error(`Error inserting sensor data: ${error.message}`);
       throw new Error(`Error inserting sensor data: ${error.message}`);
+    }
+  }
+  
+  // Method to check if sensor value exceeds thresholds
+  static async checkSensorThresholds(sensorId, value) {
+    try {
+      console.log(`Checking if sensor ${sensorId} value ${value} exceeds thresholds`);
+      
+      // Get sensor type
+      const sensor = await this.getSensorById(sensorId);
+      if (!sensor) {
+        throw new Error(`Sensor with ID ${sensorId} not found`);
+      }
+      
+      // Get alert configurations for this sensor type
+      const query = `
+        SELECT config_id, user_id, sensor_type, min_value, max_value
+        FROM alert_config
+        WHERE is_active = true AND LOWER(sensor_type) = LOWER($1)
+      `;
+      
+      const result = await db.query(query, [sensor.sensor_type]);
+      const configs = result.rows;
+      
+      console.log(`Found ${configs.length} alert configurations for sensor type ${sensor.sensor_type}`);
+      
+      const thresholdExceeded = {
+        isExceeded: false,
+        threshold: null,
+        type: null, // 'high' or 'low'
+        config: null
+      };
+      
+      // Check each configuration
+      for (const config of configs) {
+        console.log(`Checking config min_value=${config.min_value}, max_value=${config.max_value}`);
+        
+        if (value < config.min_value) {
+          console.log(`Low threshold exceeded: ${value} < ${config.min_value}`);
+          thresholdExceeded.isExceeded = true;
+          thresholdExceeded.threshold = config.min_value;
+          thresholdExceeded.type = 'low';
+          thresholdExceeded.config = config;
+          break;
+        } else if (value > config.max_value) {
+          console.log(`High threshold exceeded: ${value} > ${config.max_value}`);
+          thresholdExceeded.isExceeded = true;
+          thresholdExceeded.threshold = config.max_value;
+          thresholdExceeded.type = 'high';
+          thresholdExceeded.config = config;
+          break;
+        }
+      }
+      
+      return thresholdExceeded;
+    } catch (error) {
+      console.error(`Error checking sensor thresholds: ${error.message}`);
+      throw new Error(`Error checking sensor thresholds: ${error.message}`);
     }
   }
 }

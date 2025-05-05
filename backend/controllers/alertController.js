@@ -8,6 +8,7 @@ exports.getAllAlerts = async (req, res, next) => {
     const limit = req.query.limit ? parseInt(req.query.limit) : 50;
     const status = req.query.status || null;
     
+    console.log(`Getting alerts with limit: ${limit}, status: ${status}`);
     const alerts = await AlertModel.getAllAlerts(limit, status);
     
     res.status(200).json({
@@ -16,6 +17,28 @@ exports.getAllAlerts = async (req, res, next) => {
       data: alerts
     });
   } catch (error) {
+    console.error('Error in getAllAlerts:', error);
+    next(error);
+  }
+};
+
+// @desc    Get recent alerts for dashboard
+// @route   GET /api/alerts/recent
+// @access  Private
+exports.getRecentAlerts = async (req, res, next) => {
+  try {
+    const limit = req.query.limit ? parseInt(req.query.limit) : 5;
+    
+    console.log(`Getting ${limit} recent alerts for dashboard`);
+    const alerts = await AlertModel.getRecentAlerts(limit);
+    
+    res.status(200).json({
+      success: true,
+      count: alerts.length,
+      data: alerts
+    });
+  } catch (error) {
+    console.error('Error in getRecentAlerts:', error);
     next(error);
   }
 };
@@ -39,6 +62,7 @@ exports.getAlert = async (req, res, next) => {
       data: alert
     });
   } catch (error) {
+    console.error('Error in getAlert:', error);
     next(error);
   }
 };
@@ -51,27 +75,31 @@ exports.createAlert = async (req, res, next) => {
     const { device_id, sensor_id, alert_type, amessage, status } = req.body;
     
     // Validate input
-    if (!device_id || !sensor_id || !alert_type || !amessage) {
+    if (!alert_type || !amessage) {
       return res.status(400).json({
         success: false,
-        message: 'Please provide device_id, sensor_id, alert_type, and amessage'
+        message: 'Please provide alert_type and amessage'
       });
     }
     
-    // Create alert
-    const alert = await AlertModel.createAlert({
+    // Create alert with whatever data is provided
+    const alertData = {
       device_id,
       sensor_id,
       alert_type,
       amessage,
       status
-    });
+    };
+    
+    console.log('Creating alert with data:', alertData);
+    const alert = await AlertModel.createAlert(alertData);
     
     res.status(201).json({
       success: true,
       data: alert
     });
   } catch (error) {
+    console.error('Error in createAlert:', error);
     next(error);
   }
 };
@@ -106,6 +134,7 @@ exports.updateAlertStatus = async (req, res, next) => {
       data: alert
     });
   } catch (error) {
+    console.error('Error in updateAlertStatus:', error);
     next(error);
   }
 };
@@ -129,6 +158,7 @@ exports.deleteAlert = async (req, res, next) => {
       data: {}
     });
   } catch (error) {
+    console.error('Error in deleteAlert:', error);
     next(error);
   }
 };
@@ -138,6 +168,7 @@ exports.deleteAlert = async (req, res, next) => {
 // @access  Private
 exports.resolveAllAlerts = async (req, res, next) => {
   try {
+    console.log('Resolving all pending alerts');
     const count = await AlertModel.resolveAllAlerts();
     
     res.status(200).json({
@@ -146,6 +177,7 @@ exports.resolveAllAlerts = async (req, res, next) => {
       message: `${count} alerts resolved`
     });
   } catch (error) {
+    console.error('Error in resolveAllAlerts:', error);
     next(error);
   }
 };

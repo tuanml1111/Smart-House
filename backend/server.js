@@ -38,6 +38,18 @@ app.use('/api/sensors', sensorRoutes);
 app.use('/api/alerts', alertRoutes);
 app.use('/api/alert-config', alertConfigRoutes);
 
+// Test endpoint to manually trigger alert check
+app.get('/api/test/check-alerts', async (req, res) => {
+  try {
+    console.log('Manual alert check triggered');
+    await alertMonitorService.checkThresholds();
+    res.status(200).json({ success: true, message: 'Alert check completed' });
+  } catch (error) {
+    console.error('Error in manual alert check:', error);
+    res.status(500).json({ success: false, message: error.message });
+  }
+});
+
 // Serve frontend in production
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../frontend/build')));
@@ -52,22 +64,38 @@ app.use(errorMiddleware);
 
 // Set port
 const PORT = process.env.PORT || 5000;
-alertMonitorService.start();
+
+// Connect to MQTT broker
+mqttService.connect();
+
+// Start alert monitoring service with a delay
+// This gives time for the server to fully initialize
+setTimeout(() => {
+  console.log('Starting alert monitor service...');
+  alertMonitorService.start();
+}, 5000);
 
 // Start server
 const server = app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
 
-// Connect to MQTT broker
-mqttService.connect();
-
 // Handle unhandled promise rejections
 process.on('unhandledRejection', (err) => {
   console.error(`Error: ${err.message}`);
   // Close server & exit process
   alertMonitorService.stop();
+  mqttService.disconnect();
   server.close(() => process.exit(1));
-  
 });
 
+// Handle graceful shutdown
+process.on('SIGTERM', async () => {
+  console.log('SIGTERM received, shutting down gracefully');
+  alertMonitorService.stop();
+  mqttService.disconnect();
+  server.close(() => {
+    console.log('Process terminated');
+    process.exit(0);
+  });
+});
