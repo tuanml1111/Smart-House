@@ -15,6 +15,7 @@ const deviceRoutes = require('./routes/deviceRoutes');
 const sensorRoutes = require('./routes/sensorRoutes');
 const alertRoutes = require('./routes/alertRoutes');
 const alertConfigRoutes = require('./routes/alertConfigRoutes');
+const alertMonitorService = require('./services/alertMonitorService');
 
 // Initialize express app
 const app = express();
@@ -51,6 +52,7 @@ app.use(errorMiddleware);
 
 // Set port
 const PORT = process.env.PORT || 5000;
+alertMonitorService.start();
 
 // Start server
 const server = app.listen(PORT, () => {
@@ -64,5 +66,8 @@ mqttService.connect();
 process.on('unhandledRejection', (err) => {
   console.error(`Error: ${err.message}`);
   // Close server & exit process
+  alertMonitorService.stop();
   server.close(() => process.exit(1));
+  
 });
+

@@ -1,0 +1,67 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>YoloHome AI Model Evaluation Report</title>
+            <style>
+                body { font-family: Arial, sans-serif; margin: 20px; }
+                h1, h2, h3 { color: #3366cc; }
+                table { border-collapse: collapse; width: 100%; margin-bottom: 20px; }
+                th, td { padding: 8px; text-align: left; border-bottom: 1px solid #ddd; }
+                th { background-color: #f2f2f2; }
+                .metric-good { color: green; }
+                .metric-warning { color: orange; }
+                .metric-bad { color: red; }
+                .container { display: flex; flex-wrap: wrap; }
+                .chart { max-width: 100%; margin-bottom: 20px; }
+            </style>
+        </head>
+        <body>
+            <h1>YoloHome AI Model Evaluation Report</h1>
+            <p>Thời gian đánh giá: 2025-05-05 16:31:28</p>
+            <h2>Kết quả đánh giá mô hình</h2>
+        
+            <h3>Mô hình dự đoán nhiệt độ</h3>
+            <table>
+                <tr>
+                    <th>Metric</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td>R² (Coefficient of Determination)</td>
+                    <td class="metric-good">0.9332</td>
+                </tr>
+                <tr>
+                    <td>RMSE (Root Mean Squared Error)</td>
+                    <td>0.0874</td>
+                </tr>
+                <tr>
+                    <td>MAE (Mean Absolute Error)</td>
+                    <td>0.0706</td>
+                </tr>
+            </table>
+            
+            <h2>Biểu đồ đánh giá</h2>
+            <div class="container">
+                <div class="chart">
+                    <h3>So sánh giá trị dự đoán vs thực tế</h3>
+                    <img src="prediction_comparison.png" alt="Prediction Comparison" width="100%">
+                </div>
+                <div class="chart">
+                    <h3>Phân phối lỗi dự đoán</h3>
+                    <img src="error_distribution.png" alt="Error Distribution" width="100%">
+                </div>
+                <div class="chart">
+                    <h3>Tầm quan trọng đặc trưng</h3>
+                    <img src="feature_importance.png" alt="Feature Importance" width="100%">
+                </div>
+            </div>
+            <h2>Thông tin mô hình</h2>
+        
+            <h3>Mô hình nhiệt độ</h3>
+            <p><b>Loại mô hình:</b> RandomForestRegressor</p>
+            <p><b>Tham số:</b><br><b>bootstrap</b>: True<br><b>ccp_alpha</b>: 0.0<br><b>criterion</b>: squared_error<br><b>max_depth</b>: None<br><b>max_features</b>: sqrt<br><b>max_leaf_nodes</b>: None<br><b>max_samples</b>: None<br><b>min_impurity_decrease</b>: 0.0<br><b>min_samples_leaf</b>: 1<br><b>min_samples_split</b>: 2<br><b>min_weight_fraction_leaf</b>: 0.0<br><b>monotonic_cst</b>: None<br><b>n_estimators</b>: 400<br><b>n_jobs</b>: None<br><b>oob_score</b>: False<br><b>random_state</b>: 42<br><b>verbose</b>: 0<br><b>warm_start</b>: False</p>
+            
+        </body>
+        </html>
+        

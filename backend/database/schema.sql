@@ -88,14 +88,14 @@ CREATE TABLE alert_config (
 -- Table Alerts : Warning information
 CREATE TABLE alert (
   alert_id SERIAL PRIMARY KEY,
-  device_id INT NOT NULL,
-  sensor_id INT NOT NULL,
-  alert_type VARCHAR (50) NOT NULL,
+  alert_type VARCHAR(50) NOT NULL,
   amessage TEXT NOT NULL,
   alerted_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-  status VARCHAR (10) CHECK (status IN ('pending', 'resolved')) DEFAULT 'pending',
-  FOREIGN KEY (device_id) REFERENCES device (device_id) ON DELETE CASCADE,
-  FOREIGN KEY (sensor_id) REFERENCES sensor (sensor_id) ON DELETE CASCADE
+  status VARCHAR(10) CHECK (status IN ('pending', 'resolved')) DEFAULT 'pending',
+  device_id INT, -- optional
+  sensor_id INT, -- optional
+  FOREIGN KEY (device_id) REFERENCES device(device_id) ON DELETE SET NULL,
+  FOREIGN KEY (sensor_id) REFERENCES sensor(sensor_id) ON DELETE SET NULL
 );
 
 -- Table Control : Save equipment information controlled by users

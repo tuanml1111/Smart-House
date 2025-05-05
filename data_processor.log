@@ -1,0 +1,341 @@
+2025-05-05 12:11:56,000 - data_processor - INFO - Đang tải dữ liệu từ CSV: AI/data/raw/temperature_data_from_export2.csv
+2025-05-05 12:11:56,002 - data_processor - INFO - Đã tải dữ liệu: 192 bản ghi
+2025-05-05 12:11:56,006 - data_processor - INFO - Đã lọc dữ liệu 24 giờ gần nhất: 25 bản ghi
+2025-05-05 12:11:56,006 - data_processor - INFO - Bắt đầu tiền xử lý dữ liệu
+2025-05-05 12:11:56,009 - data_processor - INFO - Loại bỏ outlier
+2025-05-05 12:11:56,009 - data_processor - INFO - Thêm đặc trưng thời gian
+2025-05-05 12:11:56,012 - data_processor - INFO - Tạo đặc trưng trễ
+2025-05-05 12:11:56,014 - data_processor - INFO - Loại bỏ giá trị trùng lặp quá mức
+2025-05-05 12:11:56,017 - data_processor - INFO - Scaling đặc trưng
+2025-05-05 12:11:56,028 - data_processor - INFO - Hoàn tất tiền xử lý. Kích thước dữ liệu: (22, 21)
+2025-05-05 12:11:56,030 - data_processor - INFO - Chia dữ liệu với test_size=0.2
+2025-05-05 12:11:56,031 - data_processor - INFO - Sử dụng 11 đặc trưng: ['temp_lag_1_scaled', 'temp_lag_2_scaled', 'temp_lag_3_scaled', 'temp_diff_1_scaled', 'temp_diff_2_scaled', 'hour', 'day_of_week', 'time_morning', 'time_afternoon', 'time_evening', 'time_night']
+2025-05-05 12:11:56,032 - data_processor - INFO - Kích thước tập huấn luyện: 17, tập kiểm tra: 5
+2025-05-05 12:11:56,032 - model_trainer - INFO - Bắt đầu huấn luyện mô hình
+2025-05-05 12:11:56,032 - model_trainer - INFO - Huấn luyện mô hình nhiệt độ
+2025-05-05 12:12:00,888 - model_trainer - INFO - Tham số tốt nhất cho mô hình nhiệt độ: {'max_depth': 8, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 2}
+2025-05-05 12:12:00,888 - model_evaluator - INFO - Đánh giá mô hình nhiệt độ trên dữ liệu kiểm tra
+2025-05-05 12:12:00,889 - model_evaluator - INFO - Đánh giá mô hình nhiệt độ
+2025-05-05 12:12:00,890 - model_evaluator - INFO - Nhiệt độ - MSE: 0.0220, RMSE: 0.1483, MAE: 0.1400, R²: 0.8077
+2025-05-05 12:12:00,892 - model_trainer - INFO - Đã lưu mô hình nhiệt độ vào AI/training/output\temp_model.pkl
+2025-05-05 12:12:01,343 - model_evaluator - INFO - Đã lưu biểu đồ đánh giá vào AI/training/output
+2025-05-05 12:12:01,641 - model_evaluator - INFO - Đã lưu biểu đồ tầm quan trọng đặc trưng vào AI/training/output
+2025-05-05 12:12:01,643 - model_evaluator - INFO - Đã tạo báo cáo đánh giá tại AI/training/output\evaluation_report.html
+2025-05-05 14:13:47,648 - data_processor - INFO - Đang tải dữ liệu từ CSV: AI/data/raw/temperature_data_from_export2.csv
+2025-05-05 14:13:47,650 - data_processor - INFO - Đã tải dữ liệu: 2880 bản ghi
+2025-05-05 14:13:47,653 - data_processor - INFO - Đã lọc dữ liệu 24 giờ gần nhất: 25 bản ghi
+2025-05-05 14:13:47,653 - data_processor - INFO - Bắt đầu tiền xử lý dữ liệu
+2025-05-05 14:13:47,654 - data_processor - INFO - Loại bỏ outlier
+2025-05-05 14:13:47,654 - data_processor - INFO - Thêm đặc trưng thời gian
+2025-05-05 14:13:47,656 - data_processor - INFO - Tạo đặc trưng trễ
+2025-05-05 14:13:47,658 - data_processor - INFO - Loại bỏ giá trị trùng lặp quá mức
+2025-05-05 14:13:47,660 - data_processor - INFO - Scaling đặc trưng
+2025-05-05 14:13:47,669 - data_processor - INFO - Hoàn tất tiền xử lý. Kích thước dữ liệu: (22, 21)
+2025-05-05 14:13:47,672 - data_processor - INFO - Chia dữ liệu với test_size=0.2
+2025-05-05 14:13:47,672 - data_processor - INFO - Sử dụng 11 đặc trưng: ['temp_lag_1_scaled', 'temp_lag_2_scaled', 'temp_lag_3_scaled', 'temp_diff_1_scaled', 'temp_diff_2_scaled', 'hour', 'day_of_week', 'time_morning', 'time_afternoon', 'time_evening', 'time_night']
+2025-05-05 14:13:47,674 - data_processor - INFO - Kích thước tập huấn luyện: 17, tập kiểm tra: 5
+2025-05-05 14:13:47,675 - model_trainer - INFO - Bắt đầu huấn luyện mô hình
+2025-05-05 14:13:47,675 - model_trainer - INFO - Huấn luyện mô hình nhiệt độ
+2025-05-05 14:13:51,968 - model_trainer - INFO - Tham số tốt nhất cho mô hình nhiệt độ: {'max_depth': 4, 'min_samples_leaf': 10, 'min_samples_split': 2}
+2025-05-05 14:13:51,968 - model_evaluator - INFO - Đánh giá mô hình nhiệt độ trên dữ liệu kiểm tra
+2025-05-05 14:13:51,969 - model_evaluator - INFO - Đánh giá mô hình nhiệt độ
+2025-05-05 14:13:51,972 - model_evaluator - INFO - Nhiệt độ - MSE: 0.1165, RMSE: 0.3413, MAE: 0.3212, R²: -0.0184
+2025-05-05 14:13:52,026 - model_trainer - INFO - Đã lưu mô hình nhiệt độ vào AI/training/output\temp_model.pkl
+2025-05-05 14:13:52,826 - model_evaluator - INFO - Đã lưu biểu đồ đánh giá vào AI/training/output
+2025-05-05 14:13:53,018 - model_evaluator - INFO - Đã lưu biểu đồ tầm quan trọng đặc trưng vào AI/training/output
+2025-05-05 14:13:53,020 - model_evaluator - INFO - Đã tạo báo cáo đánh giá tại AI/training/output\evaluation_report.html
+2025-05-05 14:22:00,546 - data_processor - INFO - Đang tải dữ liệu từ CSV: AI/data/raw/temperature_data_from_export2.csv
+2025-05-05 14:22:00,550 - data_processor - INFO - Đã tải dữ liệu: 2880 bản ghi
+2025-05-05 14:22:00,552 - data_processor - INFO - Đã lọc dữ liệu 24 giờ gần nhất: 25 bản ghi
+2025-05-05 14:22:00,552 - data_processor - INFO - Bắt đầu tiền xử lý dữ liệu
+2025-05-05 14:22:00,553 - data_processor - INFO - Loại bỏ outlier
+2025-05-05 14:22:00,554 - data_processor - INFO - Thêm đặc trưng thời gian
+2025-05-05 14:22:00,558 - data_processor - INFO - Tạo đặc trưng trễ
+2025-05-05 14:22:00,561 - data_processor - INFO - Loại bỏ giá trị trùng lặp quá mức
+2025-05-05 14:22:00,563 - data_processor - INFO - Scaling đặc trưng
+2025-05-05 14:22:00,575 - data_processor - INFO - Hoàn tất tiền xử lý. Kích thước dữ liệu: (22, 21)
+2025-05-05 14:22:00,578 - data_processor - INFO - Chia dữ liệu với test_size=0.2
+2025-05-05 14:22:00,578 - data_processor - INFO - Sử dụng 11 đặc trưng: ['temp_lag_1_scaled', 'temp_lag_2_scaled', 'temp_lag_3_scaled', 'temp_diff_1_scaled', 'temp_diff_2_scaled', 'hour', 'day_of_week', 'time_morning', 'time_afternoon', 'time_evening', 'time_night']
+2025-05-05 14:22:00,581 - data_processor - INFO - Kích thước tập huấn luyện: 17, tập kiểm tra: 5
+2025-05-05 14:22:00,581 - model_trainer - INFO - Bắt đầu huấn luyện mô hình
+2025-05-05 14:22:00,581 - model_trainer - INFO - Huấn luyện mô hình nhiệt độ
+2025-05-05 14:22:07,376 - model_trainer - INFO - Tham số tốt nhất cho mô hình nhiệt độ: {'max_depth': 4, 'min_samples_leaf': 10, 'min_samples_split': 2}
+2025-05-05 14:22:07,377 - model_evaluator - INFO - Đánh giá mô hình nhiệt độ trên dữ liệu kiểm tra
+2025-05-05 14:22:07,377 - model_evaluator - INFO - Đánh giá mô hình nhiệt độ
+2025-05-05 14:22:07,380 - model_evaluator - INFO - Nhiệt độ - MSE: 0.1165, RMSE: 0.3413, MAE: 0.3212, R²: -0.0184
+2025-05-05 14:22:07,385 - model_trainer - INFO - Đã lưu mô hình nhiệt độ vào AI/training/output\temp_model.pkl
+2025-05-05 14:22:07,737 - model_evaluator - INFO - Đã lưu biểu đồ đánh giá vào AI/training/output
+2025-05-05 14:22:07,888 - model_evaluator - INFO - Đã lưu biểu đồ tầm quan trọng đặc trưng vào AI/training/output
+2025-05-05 14:22:07,891 - model_evaluator - INFO - Đã tạo báo cáo đánh giá tại AI/training/output\evaluation_report.html
+2025-05-05 14:38:21,766 - data_processor - INFO - Đang tải dữ liệu từ CSV: AI/data/raw/temperature_data_from_export2.csv
+2025-05-05 14:38:21,771 - data_processor - INFO - Đã tải dữ liệu: 2880 bản ghi
+2025-05-05 14:38:21,776 - data_processor - INFO - Đã lọc dữ liệu 720 giờ gần nhất: 721 bản ghi
+2025-05-05 14:38:21,776 - data_processor - INFO - Bắt đầu tiền xử lý dữ liệu
+2025-05-05 14:38:21,780 - data_processor - INFO - Loại bỏ outlier
+2025-05-05 14:38:21,782 - data_processor - INFO - Thêm đặc trưng thời gian
+2025-05-05 14:38:21,786 - data_processor - INFO - Tạo đặc trưng trễ
+2025-05-05 14:38:21,788 - data_processor - INFO - Loại bỏ giá trị trùng lặp quá mức
+2025-05-05 14:38:21,789 - data_processor - INFO - Scaling đặc trưng
+2025-05-05 14:38:21,799 - data_processor - INFO - Hoàn tất tiền xử lý. Kích thước dữ liệu: (690, 21)
+2025-05-05 14:38:21,799 - data_processor - INFO - Lưu dữ liệu đã xử lý vào AI/training/output\processed_sensor_data.csv
+2025-05-05 14:57:51,208 - data_processor - INFO - Đang tải dữ liệu từ CSV: AI/data/raw/temperature_data_from_export2.csv
+2025-05-05 14:57:51,213 - data_processor - INFO - Đã tải dữ liệu: 2880 bản ghi
+2025-05-05 14:57:51,217 - data_processor - INFO - Đã lọc dữ liệu 720 giờ gần nhất: 2 bản ghi
+2025-05-05 14:57:51,217 - data_processor - INFO - Bắt đầu tiền xử lý dữ liệu
+2025-05-05 14:57:51,219 - data_processor - INFO - Loại bỏ outlier
+2025-05-05 14:57:51,219 - data_processor - INFO - Thêm đặc trưng thời gian
+2025-05-05 14:57:51,222 - data_processor - INFO - Tạo đặc trưng trễ
+2025-05-05 14:57:51,224 - data_processor - INFO - Loại bỏ giá trị trùng lặp quá mức
+2025-05-05 14:57:51,226 - data_processor - INFO - Scaling đặc trưng
+2025-05-05 15:04:20,185 - data_processor - INFO - Đang tải dữ liệu từ CSV: AI/data/raw/temperature_data_from_export2.csv
+2025-05-05 15:04:20,190 - data_processor - INFO - Đã tải dữ liệu: 2880 bản ghi
+2025-05-05 15:04:20,199 - data_processor - INFO - Đã lọc dữ liệu 720 giờ gần nhất: 2 bản ghi
+2025-05-05 15:04:20,199 - data_processor - INFO - Bắt đầu tiền xử lý dữ liệu
+2025-05-05 15:04:20,201 - data_processor - INFO - Loại bỏ outlier
+2025-05-05 15:04:20,201 - data_processor - INFO - Thêm đặc trưng thời gian
+2025-05-05 15:04:20,206 - data_processor - INFO - Tạo đặc trưng trễ
+2025-05-05 15:04:20,211 - data_processor - INFO - Loại bỏ giá trị trùng lặp quá mức
+2025-05-05 15:04:20,216 - data_processor - INFO - Scaling đặc trưng
+2025-05-05 15:08:49,881 - data_processor - INFO - Đang tải dữ liệu từ CSV: AI/data/raw/temperature_data_from_export2.csv
+2025-05-05 15:08:49,887 - data_processor - INFO - Đã tải dữ liệu: 2880 bản ghi
+2025-05-05 15:08:49,891 - data_processor - INFO - Đã lọc dữ liệu 720 giờ gần nhất: 2 bản ghi
+2025-05-05 15:08:49,891 - data_processor - INFO - Bắt đầu tiền xử lý dữ liệu
+2025-05-05 15:08:49,893 - data_processor - INFO - Loại bỏ outlier
+2025-05-05 15:08:49,895 - data_processor - INFO - Thêm đặc trưng thời gian
+2025-05-05 15:08:49,899 - data_processor - INFO - Tạo đặc trưng trễ
+2025-05-05 15:08:49,901 - data_processor - INFO - Loại bỏ giá trị trùng lặp quá mức
+2025-05-05 15:08:49,906 - data_processor - ERROR - Dữ liệu sau khi lọc chỉ còn 0 bản ghi, không đủ để tiếp tục tiền xử lý. Hãy kiểm tra lại nguồn dữ liệu hoặc nới rộng khoảng thời gian lọc.
+2025-05-05 15:08:49,907 - data_processor - ERROR - Không có dữ liệu đã xử lý để lưu
+2025-05-05 15:08:49,907 - data_processor - ERROR - Chưa có dữ liệu đã xử lý. Hãy gọi preprocess_data() trước.
+2025-05-05 15:14:52,836 - data_processor - INFO - Đang tải dữ liệu từ CSV: AI/data/raw/temperature_data_from_export2.csv
+2025-05-05 15:14:52,841 - data_processor - INFO - Đã tải dữ liệu: 2880 bản ghi
+2025-05-05 15:14:52,845 - data_processor - INFO - Đã lọc dữ liệu 720 giờ gần nhất: 721 bản ghi
+2025-05-05 15:14:52,845 - data_processor - INFO - Bắt đầu tiền xử lý dữ liệu
+2025-05-05 15:14:52,849 - data_processor - INFO - Loại bỏ outlier
+2025-05-05 15:14:52,850 - data_processor - INFO - Thêm đặc trưng thời gian
+2025-05-05 15:14:52,854 - data_processor - INFO - Tạo đặc trưng trễ
+2025-05-05 15:14:52,856 - data_processor - INFO - Loại bỏ giá trị trùng lặp quá mức
+2025-05-05 15:14:52,860 - data_processor - INFO - Scaling đặc trưng
+2025-05-05 15:14:52,872 - data_processor - INFO - Hoàn tất tiền xử lý. Kích thước dữ liệu: (690, 21)
+2025-05-05 15:14:52,872 - data_processor - INFO - Lưu dữ liệu đã xử lý vào AI/training/output\processed_sensor_data.csv
+2025-05-05 15:14:52,882 - data_processor - INFO - Sử dụng 13 đặc trưng: ['hour', 'day_of_week', 'time_of_day', 'time_morning', 'time_afternoon', 'time_evening', 'time_night', 'temperature_scaled', 'temp_lag_1_scaled', 'temp_lag_2_scaled', 'temp_lag_3_scaled', 'temp_diff_1_scaled', 'temp_diff_2_scaled']
+2025-05-05 15:14:52,883 - data_processor - INFO - Kích thước train: 552, test: 138
+2025-05-05 15:16:53,874 - data_processor - INFO - Đang tải dữ liệu từ CSV: AI/data/raw/temperature_data_from_export2.csv
+2025-05-05 15:16:53,886 - data_processor - INFO - Đã tải dữ liệu: 2880 bản ghi
+2025-05-05 15:16:53,899 - data_processor - INFO - Đã lọc dữ liệu 720 giờ gần nhất: 721 bản ghi
+2025-05-05 15:16:53,900 - data_processor - INFO - Bắt đầu tiền xử lý dữ liệu
+2025-05-05 15:16:53,902 - data_processor - INFO - Loại bỏ outlier
+2025-05-05 15:16:53,903 - data_processor - INFO - Thêm đặc trưng thời gian
+2025-05-05 15:16:53,909 - data_processor - INFO - Tạo đặc trưng trễ
+2025-05-05 15:16:53,912 - data_processor - INFO - Loại bỏ giá trị trùng lặp quá mức
+2025-05-05 15:16:53,959 - data_processor - INFO - Scaling đặc trưng
+2025-05-05 15:16:53,982 - data_processor - INFO - Hoàn tất tiền xử lý. Kích thước dữ liệu: (690, 21)
+2025-05-05 15:16:53,983 - data_processor - INFO - Lưu dữ liệu đã xử lý vào AI/training/output\processed_sensor_data.csv
+2025-05-05 15:16:54,000 - data_processor - INFO - Sử dụng 13 đặc trưng: ['hour', 'day_of_week', 'time_of_day', 'time_morning', 'time_afternoon', 'time_evening', 'time_night', 'temperature_scaled', 'temp_lag_1_scaled', 'temp_lag_2_scaled', 'temp_lag_3_scaled', 'temp_diff_1_scaled', 'temp_diff_2_scaled']
+2025-05-05 15:16:54,002 - data_processor - INFO - Kích thước train: 552, test: 138
+2025-05-05 15:24:35,709 - data_processor - INFO - Đang tải dữ liệu từ CSV: AI/data/raw/temperature_data_from_export2.csv
+2025-05-05 15:24:35,715 - data_processor - INFO - Đã tải dữ liệu: 2880 bản ghi
+2025-05-05 15:24:35,718 - data_processor - INFO - Đã lọc dữ liệu 720 giờ gần nhất: 721 bản ghi
+2025-05-05 15:24:35,719 - data_processor - INFO - Bắt đầu tiền xử lý dữ liệu
+2025-05-05 15:24:35,720 - data_processor - INFO - Loại bỏ outlier
+2025-05-05 15:24:35,720 - data_processor - INFO - Thêm đặc trưng thời gian
+2025-05-05 15:24:35,725 - data_processor - INFO - Tạo đặc trưng trễ
+2025-05-05 15:24:35,727 - data_processor - INFO - Loại bỏ giá trị trùng lặp quá mức
+2025-05-05 15:24:35,731 - data_processor - INFO - Scaling đặc trưng
+2025-05-05 15:24:35,740 - data_processor - INFO - Hoàn tất tiền xử lý. Kích thước dữ liệu: (690, 21)
+2025-05-05 15:24:35,740 - data_processor - INFO - Lưu dữ liệu đã xử lý vào AI/training/output\processed_sensor_data.csv
+2025-05-05 15:24:35,749 - data_processor - INFO - Sử dụng 13 đặc trưng: ['hour', 'day_of_week', 'time_of_day', 'time_morning', 'time_afternoon', 'time_evening', 'time_night', 'temperature_scaled', 'temp_lag_1_scaled', 'temp_lag_2_scaled', 'temp_lag_3_scaled', 'temp_diff_1_scaled', 'temp_diff_2_scaled']
+2025-05-05 15:24:35,750 - data_processor - INFO - Kích thước train: 552, test: 138
+2025-05-05 15:24:35,750 - model_trainer - INFO - Bắt đầu huấn luyện mô hình
+2025-05-05 15:24:35,751 - model_trainer - INFO - Huấn luyện mô hình với tham số mặc định
+2025-05-05 15:31:07,619 - data_processor - INFO - Đang tải dữ liệu từ CSV: AI/data/raw/temperature_data_from_export2.csv
+2025-05-05 15:31:07,626 - data_processor - INFO - Đã tải dữ liệu: 2880 bản ghi
+2025-05-05 15:31:07,631 - data_processor - INFO - Đã lọc dữ liệu 720 giờ gần nhất: 721 bản ghi
+2025-05-05 15:31:07,631 - data_processor - INFO - Bắt đầu tiền xử lý dữ liệu
+2025-05-05 15:31:07,633 - data_processor - INFO - Loại bỏ outlier
+2025-05-05 15:31:07,634 - data_processor - INFO - Thêm đặc trưng thời gian
+2025-05-05 15:31:07,641 - data_processor - INFO - Tạo đặc trưng trễ
+2025-05-05 15:31:07,643 - data_processor - INFO - Loại bỏ giá trị trùng lặp quá mức
+2025-05-05 15:31:07,647 - data_processor - INFO - Scaling đặc trưng
+2025-05-05 15:31:07,658 - data_processor - INFO - Hoàn tất tiền xử lý. Kích thước dữ liệu: (690, 20)
+2025-05-05 15:31:07,659 - data_processor - INFO - Lưu dữ liệu đã xử lý vào AI/training/output\processed_sensor_data.csv
+2025-05-05 15:31:07,670 - data_processor - INFO - Sử dụng 12 đặc trưng: ['hour', 'day_of_week', 'time_morning', 'time_afternoon', 'time_evening', 'time_night', 'temperature_scaled', 'temp_lag_1_scaled', 'temp_lag_2_scaled', 'temp_lag_3_scaled', 'temp_diff_1_scaled', 'temp_diff_2_scaled']
+2025-05-05 15:31:07,671 - data_processor - INFO - Kích thước train: 552, test: 138
+2025-05-05 15:31:07,671 - model_trainer - INFO - Bắt đầu huấn luyện mô hình
+2025-05-05 15:31:07,671 - model_trainer - INFO - Huấn luyện mô hình với tham số mặc định
+2025-05-05 15:36:59,199 - data_processor - INFO - Đang tải dữ liệu từ CSV: AI/data/raw/temperature_data_from_export2.csv
+2025-05-05 15:36:59,206 - data_processor - INFO - Đã tải dữ liệu: 2880 bản ghi
+2025-05-05 15:36:59,209 - data_processor - INFO - Đã lọc dữ liệu 720 giờ gần nhất: 721 bản ghi
+2025-05-05 15:36:59,210 - data_processor - INFO - Bắt đầu tiền xử lý dữ liệu
+2025-05-05 15:36:59,211 - data_processor - INFO - Loại bỏ outlier
+2025-05-05 15:36:59,211 - data_processor - INFO - Thêm đặc trưng thời gian
+2025-05-05 15:36:59,216 - data_processor - INFO - Tạo đặc trưng trễ
+2025-05-05 15:36:59,218 - data_processor - INFO - Loại bỏ giá trị trùng lặp quá mức
+2025-05-05 15:36:59,220 - data_processor - INFO - Scaling đặc trưng
+2025-05-05 15:36:59,229 - data_processor - INFO - Hoàn tất tiền xử lý. Kích thước dữ liệu: (690, 20)
+2025-05-05 15:36:59,229 - data_processor - INFO - Lưu dữ liệu đã xử lý vào AI/training/output\processed_sensor_data.csv
+2025-05-05 15:36:59,239 - data_processor - INFO - Sử dụng 12 đặc trưng: ['hour', 'day_of_week', 'time_morning', 'time_afternoon', 'time_evening', 'time_night', 'temperature_scaled', 'temp_lag_1_scaled', 'temp_lag_2_scaled', 'temp_lag_3_scaled', 'temp_diff_1_scaled', 'temp_diff_2_scaled']
+2025-05-05 15:36:59,240 - data_processor - INFO - Kích thước train: 552, test: 138
+2025-05-05 15:36:59,240 - model_trainer - INFO - Bắt đầu huấn luyện mô hình
+2025-05-05 15:36:59,241 - model_trainer - INFO - Huấn luyện mô hình với tham số mặc định
+2025-05-05 15:42:48,386 - data_processor - INFO - Đang tải dữ liệu từ CSV: AI/data/raw/temperature_data_from_export2.csv
+2025-05-05 15:42:48,393 - data_processor - INFO - Đã tải dữ liệu: 2880 bản ghi
+2025-05-05 15:42:48,398 - data_processor - INFO - Đã lọc dữ liệu 720 giờ gần nhất: 721 bản ghi
+2025-05-05 15:42:48,400 - data_processor - INFO - Bắt đầu tiền xử lý dữ liệu
+2025-05-05 15:42:48,402 - data_processor - INFO - Loại bỏ outlier
+2025-05-05 15:42:48,404 - data_processor - INFO - Thêm đặc trưng thời gian
+2025-05-05 15:42:48,409 - data_processor - INFO - Tạo đặc trưng trễ
+2025-05-05 15:42:48,412 - data_processor - INFO - Loại bỏ giá trị trùng lặp quá mức
+2025-05-05 15:42:48,416 - data_processor - INFO - Scaling đặc trưng
+2025-05-05 15:42:48,427 - data_processor - INFO - Hoàn tất tiền xử lý. Kích thước dữ liệu: (690, 20)
+2025-05-05 15:42:48,427 - data_processor - INFO - Lưu dữ liệu đã xử lý vào AI/training/output\processed_sensor_data.csv
+2025-05-05 15:42:48,438 - data_processor - INFO - Sử dụng 12 đặc trưng: ['hour', 'day_of_week', 'time_morning', 'time_afternoon', 'time_evening', 'time_night', 'temperature_scaled', 'temp_lag_1_scaled', 'temp_lag_2_scaled', 'temp_lag_3_scaled', 'temp_diff_1_scaled', 'temp_diff_2_scaled']
+2025-05-05 15:42:48,440 - data_processor - INFO - Kích thước train: 552, test: 138
+2025-05-05 15:42:48,440 - model_trainer - INFO - Bắt đầu huấn luyện mô hình
+2025-05-05 15:42:48,440 - model_trainer - INFO - Huấn luyện mô hình với tham số mặc định
+2025-05-05 15:49:31,852 - data_processor - INFO - Đang tải dữ liệu từ CSV: AI/data/raw/temperature_data_from_export2.csv
+2025-05-05 15:49:31,857 - data_processor - INFO - Đã tải dữ liệu: 2880 bản ghi
+2025-05-05 15:49:31,862 - data_processor - INFO - Đã lọc dữ liệu 720 giờ gần nhất: 721 bản ghi
+2025-05-05 15:49:31,863 - data_processor - INFO - Bắt đầu tiền xử lý dữ liệu
+2025-05-05 15:49:31,865 - data_processor - INFO - Loại bỏ outlier
+2025-05-05 15:49:31,865 - data_processor - INFO - Thêm đặc trưng thời gian
+2025-05-05 15:49:31,869 - data_processor - INFO - Tạo đặc trưng trễ
+2025-05-05 15:49:31,873 - data_processor - INFO - Loại bỏ giá trị trùng lặp quá mức
+2025-05-05 15:49:31,875 - data_processor - INFO - Scaling đặc trưng
+2025-05-05 15:49:31,911 - data_processor - INFO - Hoàn tất tiền xử lý. Kích thước dữ liệu: (690, 20)
+2025-05-05 15:49:31,920 - data_processor - INFO - Lưu dữ liệu đã xử lý vào AI/training/output\processed_sensor_data.csv
+2025-05-05 15:49:31,941 - data_processor - INFO - Sử dụng 12 đặc trưng: ['hour', 'day_of_week', 'time_morning', 'time_afternoon', 'time_evening', 'time_night', 'temperature_scaled', 'temp_lag_1_scaled', 'temp_lag_2_scaled', 'temp_lag_3_scaled', 'temp_diff_1_scaled', 'temp_diff_2_scaled']
+2025-05-05 15:49:31,942 - data_processor - INFO - Kích thước train: 552, test: 138
+2025-05-05 15:49:31,942 - model_trainer - INFO - Bắt đầu huấn luyện mô hình
+2025-05-05 15:49:31,943 - model_trainer - INFO - Huấn luyện mô hình với tham số mặc định
+2025-05-05 15:49:31,947 - model_trainer - ERROR - Mô hình chưa được huấn luyện. Hãy gọi train_models() trước.
+2025-05-05 16:01:37,029 - data_processor - INFO - Đang tải dữ liệu từ CSV: AI/data/raw/temperature_data_from_export2.csv
+2025-05-05 16:01:37,034 - data_processor - INFO - Đã tải dữ liệu: 2880 bản ghi
+2025-05-05 16:01:37,039 - data_processor - INFO - Đã lọc dữ liệu 24 giờ gần nhất: 25 bản ghi
+2025-05-05 16:01:37,040 - data_processor - INFO - Bắt đầu tiền xử lý dữ liệu
+2025-05-05 16:01:37,042 - data_processor - INFO - Loại bỏ outlier
+2025-05-05 16:01:37,043 - data_processor - INFO - Thêm đặc trưng thời gian
+2025-05-05 16:01:37,049 - data_processor - INFO - Tạo đặc trưng trễ
+2025-05-05 16:01:37,052 - data_processor - INFO - Loại bỏ giá trị trùng lặp quá mức
+2025-05-05 16:01:37,056 - data_processor - INFO - Scaling đặc trưng
+2025-05-05 16:01:37,076 - data_processor - INFO - Hoàn tất tiền xử lý. Kích thước dữ liệu: (22, 21)
+2025-05-05 16:01:37,081 - data_processor - INFO - Chia dữ liệu với test_size=0.2
+2025-05-05 16:01:37,082 - data_processor - INFO - Sử dụng 11 đặc trưng: ['temp_lag_1_scaled', 'temp_lag_2_scaled', 'temp_lag_3_scaled', 'temp_diff_1_scaled', 'temp_diff_2_scaled', 'hour', 'day_of_week', 'time_morning', 'time_afternoon', 'time_evening', 'time_night']
+2025-05-05 16:01:37,083 - data_processor - INFO - Kích thước tập huấn luyện: 17, tập kiểm tra: 5
+2025-05-05 16:01:37,083 - model_trainer - INFO - Bắt đầu huấn luyện mô hình
+2025-05-05 16:01:37,084 - model_trainer - INFO - Huấn luyện mô hình nhiệt độ
+2025-05-05 16:01:41,029 - model_trainer - INFO - Tham số tốt nhất cho mô hình nhiệt độ: {'max_depth': 4, 'min_samples_leaf': 10, 'min_samples_split': 2}
+2025-05-05 16:01:41,029 - model_evaluator - INFO - Đánh giá mô hình nhiệt độ trên dữ liệu kiểm tra
+2025-05-05 16:01:41,029 - model_evaluator - INFO - Đánh giá mô hình nhiệt độ
+2025-05-05 16:01:41,032 - model_evaluator - INFO - Nhiệt độ - MSE: 0.1165, RMSE: 0.3413, MAE: 0.3212, R²: -0.0184
+2025-05-05 16:01:41,034 - model_trainer - INFO - Đã lưu mô hình nhiệt độ vào AI/training/output\temp_model.pkl
+2025-05-05 16:01:41,344 - model_evaluator - INFO - Đã lưu biểu đồ đánh giá vào AI/training/output
+2025-05-05 16:01:41,472 - model_evaluator - INFO - Đã lưu biểu đồ tầm quan trọng đặc trưng vào AI/training/output
+2025-05-05 16:01:41,474 - model_evaluator - INFO - Đã tạo báo cáo đánh giá tại AI/training/output\evaluation_report.html
+2025-05-05 16:04:14,910 - data_processor - INFO - Đang tải dữ liệu từ CSV: AI/data/raw/temperature_data_from_export2.csv
+2025-05-05 16:04:14,913 - data_processor - INFO - Đã tải dữ liệu: 720 bản ghi
+2025-05-05 16:04:14,917 - data_processor - INFO - Đã lọc dữ liệu 24 giờ gần nhất: 25 bản ghi
+2025-05-05 16:04:14,917 - data_processor - INFO - Bắt đầu tiền xử lý dữ liệu
+2025-05-05 16:04:14,918 - data_processor - INFO - Loại bỏ outlier
+2025-05-05 16:04:14,919 - data_processor - INFO - Thêm đặc trưng thời gian
+2025-05-05 16:04:14,921 - data_processor - INFO - Tạo đặc trưng trễ
+2025-05-05 16:04:14,924 - data_processor - INFO - Loại bỏ giá trị trùng lặp quá mức
+2025-05-05 16:04:14,927 - data_processor - INFO - Scaling đặc trưng
+2025-05-05 16:04:14,936 - data_processor - INFO - Hoàn tất tiền xử lý. Kích thước dữ liệu: (22, 21)
+2025-05-05 16:04:14,939 - data_processor - INFO - Chia dữ liệu với test_size=0.2
+2025-05-05 16:04:14,940 - data_processor - INFO - Sử dụng 11 đặc trưng: ['temp_lag_1_scaled', 'temp_lag_2_scaled', 'temp_lag_3_scaled', 'temp_diff_1_scaled', 'temp_diff_2_scaled', 'hour', 'day_of_week', 'time_morning', 'time_afternoon', 'time_evening', 'time_night']
+2025-05-05 16:04:14,942 - data_processor - INFO - Kích thước tập huấn luyện: 17, tập kiểm tra: 5
+2025-05-05 16:04:14,942 - model_trainer - INFO - Bắt đầu huấn luyện mô hình
+2025-05-05 16:04:14,942 - model_trainer - INFO - Huấn luyện mô hình nhiệt độ
+2025-05-05 16:04:19,193 - model_trainer - INFO - Tham số tốt nhất cho mô hình nhiệt độ: {'max_depth': 4, 'min_samples_leaf': 10, 'min_samples_split': 2}
+2025-05-05 16:04:19,194 - model_evaluator - INFO - Đánh giá mô hình nhiệt độ trên dữ liệu kiểm tra
+2025-05-05 16:04:19,194 - model_evaluator - INFO - Đánh giá mô hình nhiệt độ
+2025-05-05 16:04:19,197 - model_evaluator - INFO - Nhiệt độ - MSE: 0.1165, RMSE: 0.3413, MAE: 0.3212, R²: -0.0184
+2025-05-05 16:04:19,200 - model_trainer - INFO - Đã lưu mô hình nhiệt độ vào AI/training/output\temp_model.pkl
+2025-05-05 16:04:19,502 - model_evaluator - INFO - Đã lưu biểu đồ đánh giá vào AI/training/output
+2025-05-05 16:04:19,648 - model_evaluator - INFO - Đã lưu biểu đồ tầm quan trọng đặc trưng vào AI/training/output
+2025-05-05 16:04:19,649 - model_evaluator - INFO - Đã tạo báo cáo đánh giá tại AI/training/output\evaluation_report.html
+2025-05-05 16:14:59,572 - data_processor - INFO - Đang tải dữ liệu từ CSV: AI/data/raw/temperature_data_from_export2.csv
+2025-05-05 16:14:59,575 - data_processor - INFO - Đã tải dữ liệu: 720 bản ghi
+2025-05-05 16:14:59,579 - data_processor - INFO - Đã lọc dữ liệu 24 giờ gần nhất: 25 bản ghi
+2025-05-05 16:14:59,579 - data_processor - INFO - Bắt đầu tiền xử lý dữ liệu
+2025-05-05 16:14:59,580 - data_processor - INFO - Loại bỏ outlier
+2025-05-05 16:14:59,580 - data_processor - INFO - Thêm đặc trưng thời gian
+2025-05-05 16:14:59,583 - data_processor - INFO - Tạo đặc trưng trễ
+2025-05-05 16:14:59,585 - data_processor - INFO - Loại bỏ giá trị trùng lặp quá mức
+2025-05-05 16:14:59,587 - data_processor - INFO - Scaling đặc trưng
+2025-05-05 16:14:59,597 - data_processor - INFO - Hoàn tất tiền xử lý. Kích thước dữ liệu: (22, 21)
+2025-05-05 16:14:59,600 - data_processor - INFO - Chia dữ liệu với test_size=0.2
+2025-05-05 16:14:59,600 - data_processor - INFO - Sử dụng 11 đặc trưng: ['temp_lag_1_scaled', 'temp_lag_2_scaled', 'temp_lag_3_scaled', 'temp_diff_1_scaled', 'temp_diff_2_scaled', 'hour', 'day_of_week', 'time_morning', 'time_afternoon', 'time_evening', 'time_night']
+2025-05-05 16:14:59,602 - data_processor - INFO - Kích thước tập huấn luyện: 17, tập kiểm tra: 5
+2025-05-05 16:14:59,602 - model_trainer - INFO - Bắt đầu huấn luyện mô hình
+2025-05-05 16:14:59,602 - model_trainer - INFO - Huấn luyện mô hình nhiệt độ
+2025-05-05 16:15:13,468 - model_trainer - INFO - Tham số tốt nhất cho mô hình nhiệt độ: {'max_depth': 6, 'min_samples_leaf': 10, 'min_samples_split': 2, 'n_estimators': 100}
+2025-05-05 16:15:13,468 - model_evaluator - INFO - Đánh giá mô hình nhiệt độ trên dữ liệu kiểm tra
+2025-05-05 16:15:13,468 - model_evaluator - INFO - Đánh giá mô hình nhiệt độ
+2025-05-05 16:15:13,474 - model_evaluator - INFO - Nhiệt độ - MSE: 0.1159, RMSE: 0.3405, MAE: 0.3198, R²: -0.0134
+2025-05-05 16:15:13,491 - model_trainer - INFO - Đã lưu mô hình nhiệt độ vào AI/training/output\temp_model.pkl
+2025-05-05 16:15:13,829 - model_evaluator - INFO - Đã lưu biểu đồ đánh giá vào AI/training/output
+2025-05-05 16:15:14,144 - model_evaluator - INFO - Đã lưu biểu đồ tầm quan trọng đặc trưng vào AI/training/output
+2025-05-05 16:15:14,146 - model_evaluator - INFO - Đã tạo báo cáo đánh giá tại AI/training/output\evaluation_report.html
+2025-05-05 16:20:13,671 - data_processor - INFO - Đang tải dữ liệu từ CSV: AI/data/raw/temperature_data_from_export2.csv
+2025-05-05 16:20:13,673 - data_processor - INFO - Đã tải dữ liệu: 720 bản ghi
+2025-05-05 16:20:13,677 - data_processor - INFO - Đã lọc dữ liệu 24 giờ gần nhất: 25 bản ghi
+2025-05-05 16:20:13,677 - data_processor - INFO - Bắt đầu tiền xử lý dữ liệu
+2025-05-05 16:20:13,678 - data_processor - INFO - Loại bỏ outlier
+2025-05-05 16:20:13,679 - data_processor - INFO - Thêm đặc trưng thời gian
+2025-05-05 16:20:13,684 - data_processor - INFO - Tạo đặc trưng trễ
+2025-05-05 16:20:13,686 - data_processor - INFO - Loại bỏ giá trị trùng lặp quá mức
+2025-05-05 16:20:13,690 - data_processor - INFO - Scaling đặc trưng
+2025-05-05 16:20:13,703 - data_processor - INFO - Hoàn tất tiền xử lý. Kích thước dữ liệu: (22, 21)
+2025-05-05 16:20:13,705 - data_processor - INFO - Chia dữ liệu với test_size=0.2
+2025-05-05 16:20:13,705 - data_processor - INFO - Sử dụng 11 đặc trưng: ['temp_lag_1_scaled', 'temp_lag_2_scaled', 'temp_lag_3_scaled', 'temp_diff_1_scaled', 'temp_diff_2_scaled', 'hour', 'day_of_week', 'time_morning', 'time_afternoon', 'time_evening', 'time_night']
+2025-05-05 16:20:13,707 - data_processor - INFO - Kích thước tập huấn luyện: 17, tập kiểm tra: 5
+2025-05-05 16:20:13,707 - model_trainer - INFO - Bắt đầu huấn luyện mô hình
+2025-05-05 16:20:13,708 - model_trainer - INFO - Huấn luyện mô hình nhiệt độ
+2025-05-05 16:29:26,957 - data_processor - INFO - Đang tải dữ liệu từ CSV: AI/data/raw/temperature_data_from_export2.csv
+2025-05-05 16:29:26,958 - data_processor - INFO - Đã tải dữ liệu: 720 bản ghi
+2025-05-05 16:29:26,960 - data_processor - INFO - Đã lọc dữ liệu 24 giờ gần nhất: 25 bản ghi
+2025-05-05 16:29:26,960 - data_processor - INFO - Bắt đầu tiền xử lý dữ liệu
+2025-05-05 16:29:26,961 - data_processor - INFO - Loại bỏ outlier
+2025-05-05 16:29:26,961 - data_processor - INFO - Thêm đặc trưng thời gian
+2025-05-05 16:29:26,964 - data_processor - INFO - Tạo đặc trưng trễ
+2025-05-05 16:29:26,965 - data_processor - INFO - Loại bỏ giá trị trùng lặp quá mức
+2025-05-05 16:29:26,967 - data_processor - INFO - Scaling đặc trưng
+2025-05-05 16:29:26,976 - data_processor - INFO - Hoàn tất tiền xử lý. Kích thước dữ liệu: (22, 21)
+2025-05-05 16:29:26,979 - data_processor - INFO - Chia dữ liệu với test_size=0.2
+2025-05-05 16:29:26,979 - data_processor - INFO - Sử dụng 11 đặc trưng: ['temp_lag_1_scaled', 'temp_lag_2_scaled', 'temp_lag_3_scaled', 'temp_diff_1_scaled', 'temp_diff_2_scaled', 'hour', 'day_of_week', 'time_morning', 'time_afternoon', 'time_evening', 'time_night']
+2025-05-05 16:29:26,981 - data_processor - INFO - Kích thước tập huấn luyện: 17, tập kiểm tra: 5
+2025-05-05 16:29:26,982 - model_trainer - INFO - Bắt đầu huấn luyện mô hình
+2025-05-05 16:29:26,982 - model_trainer - INFO - Huấn luyện mô hình nhiệt độ
+2025-05-05 16:29:58,310 - model_trainer - INFO - Tham số tốt nhất cho mô hình nhiệt độ: {'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 400}
+2025-05-05 16:29:58,311 - model_evaluator - INFO - Đánh giá mô hình nhiệt độ trên dữ liệu kiểm tra
+2025-05-05 16:29:58,312 - model_evaluator - INFO - Đánh giá mô hình nhiệt độ
+2025-05-05 16:29:58,355 - model_evaluator - INFO - Nhiệt độ - MSE: 0.0076, RMSE: 0.0874, MAE: 0.0706, R²: 0.9332
+2025-05-05 16:29:58,462 - model_trainer - INFO - Đã lưu mô hình nhiệt độ vào AI/training/output\temp_model.pkl
+2025-05-05 16:29:58,761 - model_evaluator - INFO - Đã lưu biểu đồ đánh giá vào AI/training/output
+2025-05-05 16:29:58,903 - model_evaluator - INFO - Đã lưu biểu đồ tầm quan trọng đặc trưng vào AI/training/output
+2025-05-05 16:29:58,906 - model_evaluator - INFO - Đã tạo báo cáo đánh giá tại AI/training/output\evaluation_report.html
+2025-05-05 16:30:55,713 - data_processor - INFO - Đang tải dữ liệu từ CSV: AI/data/raw/temperature_data_from_export2.csv
+2025-05-05 16:30:55,716 - data_processor - INFO - Đã tải dữ liệu: 2880 bản ghi
+2025-05-05 16:30:55,719 - data_processor - INFO - Đã lọc dữ liệu 24 giờ gần nhất: 25 bản ghi
+2025-05-05 16:30:55,719 - data_processor - INFO - Bắt đầu tiền xử lý dữ liệu
+2025-05-05 16:30:55,720 - data_processor - INFO - Loại bỏ outlier
+2025-05-05 16:30:55,720 - data_processor - INFO - Thêm đặc trưng thời gian
+2025-05-05 16:30:55,723 - data_processor - INFO - Tạo đặc trưng trễ
+2025-05-05 16:30:55,724 - data_processor - INFO - Loại bỏ giá trị trùng lặp quá mức
+2025-05-05 16:30:55,726 - data_processor - INFO - Scaling đặc trưng
+2025-05-05 16:30:55,735 - data_processor - INFO - Hoàn tất tiền xử lý. Kích thước dữ liệu: (22, 21)
+2025-05-05 16:30:55,737 - data_processor - INFO - Chia dữ liệu với test_size=0.2
+2025-05-05 16:30:55,738 - data_processor - INFO - Sử dụng 11 đặc trưng: ['temp_lag_1_scaled', 'temp_lag_2_scaled', 'temp_lag_3_scaled', 'temp_diff_1_scaled', 'temp_diff_2_scaled', 'hour', 'day_of_week', 'time_morning', 'time_afternoon', 'time_evening', 'time_night']
+2025-05-05 16:30:55,739 - data_processor - INFO - Kích thước tập huấn luyện: 17, tập kiểm tra: 5
+2025-05-05 16:30:55,739 - model_trainer - INFO - Bắt đầu huấn luyện mô hình
+2025-05-05 16:30:55,739 - model_trainer - INFO - Huấn luyện mô hình nhiệt độ
+2025-05-05 16:31:28,003 - model_trainer - INFO - Tham số tốt nhất cho mô hình nhiệt độ: {'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 400}
+2025-05-05 16:31:28,003 - model_evaluator - INFO - Đánh giá mô hình nhiệt độ trên dữ liệu kiểm tra
+2025-05-05 16:31:28,003 - model_evaluator - INFO - Đánh giá mô hình nhiệt độ
+2025-05-05 16:31:28,019 - model_evaluator - INFO - Nhiệt độ - MSE: 0.0076, RMSE: 0.0874, MAE: 0.0706, R²: 0.9332
+2025-05-05 16:31:28,077 - model_trainer - INFO - Đã lưu mô hình nhiệt độ vào AI/training/output\temp_model.pkl
+2025-05-05 16:31:28,282 - model_evaluator - INFO - Đã lưu biểu đồ đánh giá vào AI/training/output
+2025-05-05 16:31:28,399 - model_evaluator - INFO - Đã lưu biểu đồ tầm quan trọng đặc trưng vào AI/training/output
+2025-05-05 16:31:28,401 - model_evaluator - INFO - Đã tạo báo cáo đánh giá tại AI/training/output\evaluation_report.html

@@ -1,0 +1,6 @@
+2025-05-04 21:43:41,386 - data_collector - INFO - ✅ Kết nối thành công đến PostgreSQL
+2025-05-04 21:43:41,394 - data_collector - INFO - ✅ Truy xuất 91 bản ghi cho sensor 1
+2025-05-04 21:43:41,395 - data_collector - INFO - ✅ Truy xuất 91 bản ghi cho sensor 2
+2025-05-04 21:43:41,402 - data_collector - INFO - 💾 Đã lưu dữ liệu vào ./raw_data\temperature_data_20250504_214341.csv
+2025-05-04 21:43:41,404 - data_collector - INFO - 💾 Đã lưu dữ liệu vào ./raw_data\humidity_data_20250504_214341.csv
+2025-05-04 21:43:41,404 - data_collector - INFO - ✅ Hoàn thành thu thập dữ liệu
