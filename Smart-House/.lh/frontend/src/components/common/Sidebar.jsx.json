@@ -1,0 +1,26 @@
+{
+    "sourceFile": "frontend/src/components/common/Sidebar.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1746518188983,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1746518389170,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,15 +40,14 @@\n           {/* Thêm AI Prediction vào sidebar */}\r\n           <li className=\"nav-item\">\r\n             <NavLink to=\"/ai-prediction\" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>\r\n               <i className=\"fas fa-brain\"></i>\r\n-              <span>AI Prediction</span>\r\n+              <span>AI </span>\r\n             </NavLink>\r\n           </li>\r\n           <li className=\"nav-item\">\r\n             <NavLink to=\"/settings\" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>\r\n               <i className=\"fas fa-cog\"></i>\r\n-              <span>Settings</span>\r\n             </NavLink>\r\n           </li>\r\n         </ul>\r\n       </nav>\r\n"
+                },
+                {
+                    "date": 1746518396555,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,13 +43,9 @@\n               <i className=\"fas fa-brain\"></i>\r\n               <span>AI </span>\r\n             </NavLink>\r\n           </li>\r\n-          <li className=\"nav-item\">\r\n-            <NavLink to=\"/settings\" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>\r\n-              <i className=\"fas fa-cog\"></i>\r\n-            </NavLink>\r\n-          </li>\r\n+          \r\n         </ul>\r\n       </nav>\r\n     </div>\r\n   );\r\n"
+                }
+            ],
+            "date": 1746518188983,
+            "name": "Commit-0",
+            "content": "// frontend/src/components/common/Sidebar.jsx\r\nimport React from 'react';\r\nimport { NavLink } from 'react-router-dom';\r\n\r\nconst Sidebar = () => {\r\n  return (\r\n    <div className=\"sidebar\">\r\n      <nav className=\"nav\">\r\n        <ul className=\"nav-list\">\r\n          <li className=\"nav-item\">\r\n            <NavLink to=\"/dashboard\" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>\r\n              <i className=\"fas fa-tachometer-alt\"></i>\r\n              <span>Dashboard</span>\r\n            </NavLink>\r\n          </li>\r\n          <li className=\"nav-item\">\r\n            <NavLink to=\"/devices\" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>\r\n              <i className=\"fas fa-plug\"></i>\r\n              <span>Devices</span>\r\n            </NavLink>\r\n          </li>\r\n          <li className=\"nav-item\">\r\n            <NavLink to=\"/sensors\" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>\r\n              <i className=\"fas fa-thermometer-half\"></i>\r\n              <span>Sensors</span>\r\n            </NavLink>\r\n          </li>\r\n          <li className=\"nav-item\">\r\n            <NavLink to=\"/alerts\" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>\r\n              <i className=\"fas fa-bell\"></i>\r\n              <span>Alerts</span>\r\n            </NavLink>\r\n          </li>\r\n          <li className=\"nav-item\">\r\n            <NavLink to=\"/alert-config\" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>\r\n              <i className=\"fas fa-sliders-h\"></i>\r\n              <span>Alert Config</span>\r\n            </NavLink>\r\n          </li>\r\n          {/* Thêm AI Prediction vào sidebar */}\r\n          <li className=\"nav-item\">\r\n            <NavLink to=\"/ai-prediction\" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>\r\n              <i className=\"fas fa-brain\"></i>\r\n              <span>AI Prediction</span>\r\n            </NavLink>\r\n          </li>\r\n          <li className=\"nav-item\">\r\n            <NavLink to=\"/settings\" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>\r\n              <i className=\"fas fa-cog\"></i>\r\n              <span>Settings</span>\r\n            </NavLink>\r\n          </li>\r\n        </ul>\r\n      </nav>\r\n    </div>\r\n  );\r\n};\r\n\r\nexport default Sidebar;"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "sourceFile": "frontend/src/App.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1746518146043,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1746518146043,
+            "name": "Commit-0",
+            "content": "// frontend/src/App.js\r\nimport React, { useState, useEffect } from 'react';\r\nimport { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';\r\nimport Login from './components/Login/Login';\r\nimport Dashboard from './components/Dashboard/Dashboard';\r\nimport DeviceControl from './components/DeviceControl/DeviceControl';\r\nimport Alerts from './components/Alerts/Alerts';\r\nimport AlertConfig from './components/Alerts/AlertConfig';\r\nimport AIPrediction from './components/AIPrediction/AIPrediction'; // Import component mới\r\nimport Header from './components/common/Header';\r\nimport Sidebar from './components/common/Sidebar';\r\nimport Footer from './components/common/Footer';\r\nimport Sensors from './components/Sensors/Sensors';\r\n\r\nfunction App() {\r\n  const [isAuthenticated, setIsAuthenticated] = useState(false);\r\n  \r\n  useEffect(() => {\r\n    // Check if token exists in localStorage\r\n    const token = localStorage.getItem('token');\r\n    if (token) {\r\n      setIsAuthenticated(true);\r\n    }\r\n  }, []);\r\n  \r\n  const handleLogin = (token) => {\r\n    localStorage.setItem('token', token);\r\n    setIsAuthenticated(true);\r\n  };\r\n  \r\n  const handleLogout = () => {\r\n    localStorage.removeItem('token');\r\n    localStorage.removeItem('userId');\r\n    setIsAuthenticated(false);\r\n  };\r\n  \r\n  return (\r\n    <Router>\r\n      <div className=\"app\">\r\n        <Routes>\r\n          <Route path=\"/login\" element={\r\n            isAuthenticated ? <Navigate to=\"/dashboard\" /> : <Login onLogin={handleLogin} />\r\n          } />\r\n          \r\n          <Route path=\"/*\" element={\r\n            isAuthenticated ? (\r\n              <div className=\"app-container\">\r\n                <Header onLogout={handleLogout} />\r\n                <div className=\"main-container\">\r\n                  <Sidebar />\r\n                  <main className=\"content\">\r\n                    <Routes>\r\n                      <Route path=\"/\" element={<Navigate to=\"/dashboard\" />} />\r\n                      <Route path=\"/dashboard\" element={<Dashboard />} />\r\n                      <Route path=\"/devices\" element={<DeviceControl />} />\r\n                      <Route path=\"/alerts\" element={<Alerts />} />\r\n                      <Route path=\"/alert-config\" element={<AlertConfig />} />\r\n                      <Route path=\"/sensors\" element={<Sensors />} />\r\n                      <Route path=\"/ai-prediction\" element={<AIPrediction />} /> {/* Thêm route mới */}\r\n                    </Routes>\r\n                  </main>\r\n                </div>\r\n                <Footer />\r\n              </div>\r\n            ) : <Navigate to=\"/login\" />\r\n          } />\r\n        </Routes>\r\n      </div>\r\n    </Router>\r\n  );\r\n}\r\n\r\nexport default App;"
+        }
+    ]
+}

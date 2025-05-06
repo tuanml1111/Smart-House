@@ -1,0 +1,452 @@
+[2025-04-21T05:09:36.690Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:09:36.697Z] [INFO] MQTT client disconnected
+[2025-04-21T05:09:38.216Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:09:38.216Z] [INFO] MQTT client disconnected
+[2025-04-21T05:09:39.741Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:09:39.742Z] [INFO] MQTT client disconnected
+[2025-04-21T05:09:41.279Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:09:41.280Z] [INFO] MQTT client disconnected
+[2025-04-21T05:09:42.820Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:09:42.821Z] [INFO] MQTT client disconnected
+[2025-04-21T05:09:44.337Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:09:44.338Z] [INFO] MQTT client disconnected
+[2025-04-21T05:09:46.102Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:09:46.103Z] [INFO] MQTT client disconnected
+[2025-04-21T05:09:47.880Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:09:47.881Z] [INFO] MQTT client disconnected
+[2025-04-21T05:09:49.416Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:09:49.417Z] [INFO] MQTT client disconnected
+[2025-04-21T05:09:51.225Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:09:51.225Z] [INFO] MQTT client disconnected
+[2025-04-21T05:09:53.011Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:09:53.011Z] [INFO] MQTT client disconnected
+[2025-04-21T05:09:54.542Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:09:54.543Z] [INFO] MQTT client disconnected
+[2025-04-21T05:09:56.073Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:09:56.073Z] [INFO] MQTT client disconnected
+[2025-04-21T05:09:57.854Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:09:57.855Z] [INFO] MQTT client disconnected
+[2025-04-21T05:09:59.629Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:09:59.629Z] [INFO] MQTT client disconnected
+[2025-04-21T05:10:01.163Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:10:01.163Z] [INFO] MQTT client disconnected
+[2025-04-21T05:10:02.698Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:10:02.699Z] [INFO] MQTT client disconnected
+[2025-04-21T05:10:04.233Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:10:04.234Z] [INFO] MQTT client disconnected
+[2025-04-21T05:10:06.012Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:10:06.013Z] [INFO] MQTT client disconnected
+[2025-04-21T05:10:07.803Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:10:07.804Z] [INFO] MQTT client disconnected
+[2025-04-21T05:10:09.591Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:10:09.592Z] [INFO] MQTT client disconnected
+[2025-04-21T05:10:11.135Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:10:11.136Z] [INFO] MQTT client disconnected
+[2025-04-21T05:10:12.912Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:10:12.913Z] [INFO] MQTT client disconnected
+[2025-04-21T05:10:14.436Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:10:14.437Z] [INFO] MQTT client disconnected
+[2025-04-21T05:10:16.219Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:10:16.220Z] [INFO] MQTT client disconnected
+[2025-04-21T05:10:18.007Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:10:18.008Z] [INFO] MQTT client disconnected
+[2025-04-21T05:10:19.531Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:10:19.531Z] [INFO] MQTT client disconnected
+[2025-04-21T05:10:21.052Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:10:21.053Z] [INFO] MQTT client disconnected
+[2025-04-21T05:10:22.591Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:10:22.592Z] [INFO] MQTT client disconnected
+[2025-04-21T05:10:24.368Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:10:24.368Z] [INFO] MQTT client disconnected
+[2025-04-21T05:10:25.903Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:10:25.903Z] [INFO] MQTT client disconnected
+[2025-04-21T05:10:27.688Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:10:27.689Z] [INFO] MQTT client disconnected
+[2025-04-21T05:10:29.224Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:10:29.225Z] [INFO] MQTT client disconnected
+[2025-04-21T05:10:31.013Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:10:31.014Z] [INFO] MQTT client disconnected
+[2025-04-21T05:10:32.528Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:10:32.529Z] [INFO] MQTT client disconnected
+[2025-04-21T05:10:34.061Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:10:34.061Z] [INFO] MQTT client disconnected
+[2025-04-21T05:10:35.858Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:10:35.858Z] [INFO] MQTT client disconnected
+[2025-04-21T05:10:37.391Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:10:37.393Z] [INFO] MQTT client disconnected
+[2025-04-21T05:10:39.167Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:10:39.168Z] [INFO] MQTT client disconnected
+[2025-04-21T05:10:40.949Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:10:40.949Z] [INFO] MQTT client disconnected
+[2025-04-21T05:10:42.751Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:10:42.751Z] [INFO] MQTT client disconnected
+[2025-04-21T05:10:44.525Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:10:44.526Z] [INFO] MQTT client disconnected
+[2025-04-21T05:10:46.067Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:10:46.067Z] [INFO] MQTT client disconnected
+[2025-04-21T05:10:47.583Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:10:47.584Z] [INFO] MQTT client disconnected
+[2025-04-21T05:10:49.097Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:10:49.098Z] [INFO] MQTT client disconnected
+[2025-04-21T05:10:50.626Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:10:50.626Z] [INFO] MQTT client disconnected
+[2025-04-21T05:10:52.167Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:10:52.168Z] [INFO] MQTT client disconnected
+[2025-04-21T05:10:53.959Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:10:53.960Z] [INFO] MQTT client disconnected
+[2025-04-21T05:10:55.728Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:10:55.728Z] [INFO] MQTT client disconnected
+[2025-04-21T05:10:57.518Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:10:57.520Z] [INFO] MQTT client disconnected
+[2025-04-21T05:10:59.299Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:10:59.299Z] [INFO] MQTT client disconnected
+[2025-04-21T05:11:00.831Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:11:00.832Z] [INFO] MQTT client disconnected
+[2025-04-21T05:11:02.360Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:11:02.361Z] [INFO] MQTT client disconnected
+[2025-04-21T05:11:03.880Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:11:03.880Z] [INFO] MQTT client disconnected
+[2025-04-21T05:11:05.667Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:11:05.669Z] [INFO] MQTT client disconnected
+[2025-04-21T05:11:07.435Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:11:07.435Z] [INFO] MQTT client disconnected
+[2025-04-21T05:11:09.211Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:11:09.212Z] [INFO] MQTT client disconnected
+[2025-04-21T05:11:10.751Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:11:10.752Z] [INFO] MQTT client disconnected
+[2025-04-21T05:11:12.278Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:11:12.279Z] [INFO] MQTT client disconnected
+[2025-04-21T05:11:14.047Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:11:14.047Z] [INFO] MQTT client disconnected
+[2025-04-21T05:11:15.834Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:11:15.834Z] [INFO] MQTT client disconnected
+[2025-04-21T05:11:17.632Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:11:17.632Z] [INFO] MQTT client disconnected
+[2025-04-21T05:11:19.422Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:11:19.423Z] [INFO] MQTT client disconnected
+[2025-04-21T05:11:21.200Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:11:21.200Z] [INFO] MQTT client disconnected
+[2025-04-21T05:11:22.721Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:11:22.722Z] [INFO] MQTT client disconnected
+[2025-04-21T05:11:24.504Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:11:24.504Z] [INFO] MQTT client disconnected
+[2025-04-21T05:11:26.287Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:11:26.288Z] [INFO] MQTT client disconnected
+[2025-04-21T05:11:27.828Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:11:27.829Z] [INFO] MQTT client disconnected
+[2025-04-21T05:11:29.377Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:11:29.378Z] [INFO] MQTT client disconnected
+[2025-04-21T05:11:31.167Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:11:31.168Z] [INFO] MQTT client disconnected
+[2025-04-21T05:11:32.696Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:11:32.697Z] [INFO] MQTT client disconnected
+[2025-04-21T05:11:34.475Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:11:34.475Z] [INFO] MQTT client disconnected
+[2025-04-21T05:11:36.271Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:11:36.272Z] [INFO] MQTT client disconnected
+[2025-04-21T05:11:38.069Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:11:38.069Z] [INFO] MQTT client disconnected
+[2025-04-21T05:11:39.854Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:11:39.854Z] [INFO] MQTT client disconnected
+[2025-04-21T05:11:41.396Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:11:41.397Z] [INFO] MQTT client disconnected
+[2025-04-21T05:13:44.533Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:13:44.535Z] [INFO] MQTT client disconnected
+[2025-04-21T05:13:46.073Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:13:46.073Z] [INFO] MQTT client disconnected
+[2025-04-21T05:13:47.862Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:13:47.863Z] [INFO] MQTT client disconnected
+[2025-04-21T05:13:49.390Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:13:49.391Z] [INFO] MQTT client disconnected
+[2025-04-21T05:13:50.919Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:13:50.920Z] [INFO] MQTT client disconnected
+[2025-04-21T05:13:52.697Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:13:52.698Z] [INFO] MQTT client disconnected
+[2025-04-21T05:13:54.491Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:13:54.492Z] [INFO] MQTT client disconnected
+[2025-04-21T05:13:56.275Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:13:56.276Z] [INFO] MQTT client disconnected
+[2025-04-21T05:13:57.796Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:13:57.797Z] [INFO] MQTT client disconnected
+[2025-04-21T05:13:59.311Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:13:59.312Z] [INFO] MQTT client disconnected
+[2025-04-21T05:14:00.844Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:14:00.845Z] [INFO] MQTT client disconnected
+[2025-04-21T05:14:02.632Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:14:02.632Z] [INFO] MQTT client disconnected
+[2025-04-21T05:14:04.166Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:14:04.167Z] [INFO] MQTT client disconnected
+[2025-04-21T05:14:05.688Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:14:05.689Z] [INFO] MQTT client disconnected
+[2025-04-21T05:14:07.504Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:14:07.505Z] [INFO] MQTT client disconnected
+[2025-04-21T05:14:09.031Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:14:09.032Z] [INFO] MQTT client disconnected
+[2025-04-21T05:14:10.556Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:14:10.557Z] [INFO] MQTT client disconnected
+[2025-04-21T05:14:12.348Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:14:12.349Z] [INFO] MQTT client disconnected
+[2025-04-21T05:14:14.120Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:14:14.120Z] [INFO] MQTT client disconnected
+[2025-04-21T05:14:15.649Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:14:15.650Z] [INFO] MQTT client disconnected
+[2025-04-21T05:14:17.447Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:14:17.448Z] [INFO] MQTT client disconnected
+[2025-04-21T05:14:19.212Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:14:19.214Z] [INFO] MQTT client disconnected
+[2025-04-21T05:14:20.747Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:14:20.747Z] [INFO] MQTT client disconnected
+[2025-04-21T05:14:22.280Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:14:22.281Z] [INFO] MQTT client disconnected
+[2025-04-21T05:14:23.807Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:14:23.808Z] [INFO] MQTT client disconnected
+[2025-04-21T05:18:38.237Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:18:38.240Z] [INFO] MQTT client disconnected
+[2025-04-21T05:18:40.029Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:18:40.030Z] [INFO] MQTT client disconnected
+[2025-04-21T05:18:41.804Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:18:41.804Z] [INFO] MQTT client disconnected
+[2025-04-21T05:18:43.588Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:18:43.590Z] [INFO] MQTT client disconnected
+[2025-04-21T05:18:45.106Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:18:45.106Z] [INFO] MQTT client disconnected
+[2025-04-21T05:18:46.889Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:18:46.889Z] [INFO] MQTT client disconnected
+[2025-04-21T05:18:48.652Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:18:48.653Z] [INFO] MQTT client disconnected
+[2025-04-21T05:18:50.430Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:18:50.431Z] [INFO] MQTT client disconnected
+[2025-04-21T05:18:52.202Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:18:52.203Z] [INFO] MQTT client disconnected
+[2025-04-21T05:18:53.738Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:18:53.739Z] [INFO] MQTT client disconnected
+[2025-04-21T05:18:55.527Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:18:55.528Z] [INFO] MQTT client disconnected
+[2025-04-21T05:18:57.048Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:18:57.048Z] [INFO] MQTT client disconnected
+[2025-04-21T05:18:58.820Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:18:58.820Z] [INFO] MQTT client disconnected
+[2025-04-21T05:19:00.607Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:19:00.608Z] [INFO] MQTT client disconnected
+[2025-04-21T05:19:02.123Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:19:02.123Z] [INFO] MQTT client disconnected
+[2025-04-21T05:19:03.665Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:19:03.666Z] [INFO] MQTT client disconnected
+[2025-04-21T05:19:05.445Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:19:05.446Z] [INFO] MQTT client disconnected
+[2025-04-21T05:19:07.230Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:19:07.231Z] [INFO] MQTT client disconnected
+[2025-04-21T05:19:09.024Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:19:09.024Z] [INFO] MQTT client disconnected
+[2025-04-21T05:19:10.560Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:19:10.562Z] [INFO] MQTT client disconnected
+[2025-04-21T05:19:12.346Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:19:12.346Z] [INFO] MQTT client disconnected
+[2025-04-21T05:19:13.872Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:19:13.874Z] [INFO] MQTT client disconnected
+[2025-04-21T05:19:15.399Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:19:15.399Z] [INFO] MQTT client disconnected
+[2025-04-21T05:19:16.916Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:19:16.916Z] [INFO] MQTT client disconnected
+[2025-04-21T05:19:18.709Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:19:18.711Z] [INFO] MQTT client disconnected
+[2025-04-21T05:19:20.251Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:19:20.252Z] [INFO] MQTT client disconnected
+[2025-04-21T05:19:21.792Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:19:21.793Z] [INFO] MQTT client disconnected
+[2025-04-21T05:19:23.324Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:19:23.324Z] [INFO] MQTT client disconnected
+[2025-04-21T05:19:24.855Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:19:24.855Z] [INFO] MQTT client disconnected
+[2025-04-21T05:19:26.628Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:19:26.628Z] [INFO] MQTT client disconnected
+[2025-04-21T05:19:28.158Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:19:28.159Z] [INFO] MQTT client disconnected
+[2025-04-21T05:19:29.672Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:19:29.673Z] [INFO] MQTT client disconnected
+[2025-04-21T05:19:31.462Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:19:31.463Z] [INFO] MQTT client disconnected
+[2025-04-21T05:19:33.253Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:19:33.254Z] [INFO] MQTT client disconnected
+[2025-04-21T05:19:34.781Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:19:34.781Z] [INFO] MQTT client disconnected
+[2025-04-21T05:19:36.555Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:19:36.556Z] [INFO] MQTT client disconnected
+[2025-04-21T05:19:38.088Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:19:38.090Z] [INFO] MQTT client disconnected
+[2025-04-21T05:19:39.875Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:19:39.877Z] [INFO] MQTT client disconnected
+[2025-04-21T05:19:41.655Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:19:41.655Z] [INFO] MQTT client disconnected
+[2025-04-21T05:19:43.435Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:19:43.437Z] [INFO] MQTT client disconnected
+[2025-04-21T05:19:44.961Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:19:44.962Z] [INFO] MQTT client disconnected
+[2025-04-21T05:19:46.482Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:19:46.482Z] [INFO] MQTT client disconnected
+[2025-04-21T05:19:48.253Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:19:48.254Z] [INFO] MQTT client disconnected
+[2025-04-21T05:19:50.026Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:19:50.027Z] [INFO] MQTT client disconnected
+[2025-04-21T05:19:51.804Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:19:51.804Z] [INFO] MQTT client disconnected
+[2025-04-21T05:19:53.327Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:19:53.328Z] [INFO] MQTT client disconnected
+[2025-04-21T05:19:54.847Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:19:54.848Z] [INFO] MQTT client disconnected
+[2025-04-21T05:19:56.365Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:19:56.366Z] [INFO] MQTT client disconnected
+[2025-04-21T05:19:58.139Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:19:58.139Z] [INFO] MQTT client disconnected
+[2025-04-21T05:19:59.679Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:19:59.680Z] [INFO] MQTT client disconnected
+[2025-04-21T05:22:12.483Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:22:12.485Z] [INFO] MQTT client disconnected
+[2025-04-21T05:22:14.013Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:22:14.014Z] [INFO] MQTT client disconnected
+[2025-04-21T05:22:15.540Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:22:15.541Z] [INFO] MQTT client disconnected
+[2025-04-21T05:22:17.317Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:22:17.318Z] [INFO] MQTT client disconnected
+[2025-04-21T05:22:18.855Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:22:18.858Z] [INFO] MQTT client disconnected
+[2025-04-21T05:22:20.375Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:22:20.377Z] [INFO] MQTT client disconnected
+[2025-04-21T05:22:21.898Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:22:21.899Z] [INFO] MQTT client disconnected
+[2025-04-21T05:22:23.426Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:22:23.427Z] [INFO] MQTT client disconnected
+[2025-04-21T05:22:24.940Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:22:24.942Z] [INFO] MQTT client disconnected
+[2025-04-21T05:22:26.462Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:22:26.463Z] [INFO] MQTT client disconnected
+[2025-04-21T05:22:27.988Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:22:27.989Z] [INFO] MQTT client disconnected
+[2025-04-21T05:22:29.509Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:22:29.510Z] [INFO] MQTT client disconnected
+[2025-04-21T05:22:31.299Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:22:31.300Z] [INFO] MQTT client disconnected
+[2025-04-21T05:22:33.074Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:22:33.075Z] [INFO] MQTT client disconnected
+[2025-04-21T05:22:34.841Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:22:34.842Z] [INFO] MQTT client disconnected
+[2025-04-21T05:22:36.618Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:22:36.619Z] [INFO] MQTT client disconnected
+[2025-04-21T05:22:38.135Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:22:38.136Z] [INFO] MQTT client disconnected
+[2025-04-21T05:22:39.904Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:22:39.905Z] [INFO] MQTT client disconnected
+[2025-04-21T05:22:41.695Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:22:41.696Z] [INFO] MQTT client disconnected
+[2025-04-21T05:22:43.507Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:22:43.508Z] [INFO] MQTT client disconnected
+[2025-04-21T05:22:45.049Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:22:45.050Z] [INFO] MQTT client disconnected
+[2025-04-21T05:22:46.822Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:22:46.823Z] [INFO] MQTT client disconnected
+[2025-04-21T05:22:48.606Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:22:48.607Z] [INFO] MQTT client disconnected
+[2025-04-21T05:22:50.398Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:22:50.399Z] [INFO] MQTT client disconnected
+[2025-04-21T05:22:52.195Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:22:52.196Z] [INFO] MQTT client disconnected
+[2025-04-21T05:22:53.994Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:22:53.994Z] [INFO] MQTT client disconnected
+[2025-04-21T05:22:55.781Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:22:55.782Z] [INFO] MQTT client disconnected
+[2025-04-21T05:22:57.568Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:22:57.569Z] [INFO] MQTT client disconnected
+[2025-04-21T05:22:59.351Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:22:59.352Z] [INFO] MQTT client disconnected
+[2025-04-21T05:23:01.125Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:23:01.126Z] [INFO] MQTT client disconnected
+[2025-04-21T05:23:02.898Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:23:02.899Z] [INFO] MQTT client disconnected
+[2025-04-21T05:23:04.680Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:23:04.681Z] [INFO] MQTT client disconnected
+[2025-04-21T05:23:06.471Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:23:06.472Z] [INFO] MQTT client disconnected
+[2025-04-21T05:23:08.260Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:23:08.260Z] [INFO] MQTT client disconnected
+[2025-04-21T05:23:09.796Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:23:09.798Z] [INFO] MQTT client disconnected
+[2025-04-21T05:23:11.312Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:23:11.313Z] [INFO] MQTT client disconnected
+[2025-04-21T05:23:12.847Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:23:12.849Z] [INFO] MQTT client disconnected
+[2025-04-21T05:23:14.375Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:23:14.375Z] [INFO] MQTT client disconnected
+[2025-04-21T05:23:16.147Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:23:16.148Z] [INFO] MQTT client disconnected
+[2025-04-21T05:23:17.918Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:23:17.920Z] [INFO] MQTT client disconnected
+[2025-04-21T05:23:19.705Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:23:19.706Z] [INFO] MQTT client disconnected
+[2025-04-21T05:23:21.242Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:23:21.243Z] [INFO] MQTT client disconnected
+[2025-04-21T05:23:22.748Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:23:22.749Z] [INFO] MQTT client disconnected
+[2025-04-21T05:23:24.520Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:23:24.521Z] [INFO] MQTT client disconnected
+[2025-04-21T05:23:26.296Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:23:26.297Z] [INFO] MQTT client disconnected
+[2025-04-21T05:23:27.828Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:23:27.829Z] [INFO] MQTT client disconnected
+[2025-04-21T05:23:29.617Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:23:29.618Z] [INFO] MQTT client disconnected
+[2025-04-21T05:23:31.408Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:23:31.408Z] [INFO] MQTT client disconnected
+[2025-04-21T05:23:33.197Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:23:33.197Z] [INFO] MQTT client disconnected
+[2025-04-21T05:23:34.727Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:23:34.728Z] [INFO] MQTT client disconnected
+[2025-04-21T05:23:36.526Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:23:36.537Z] [INFO] MQTT client disconnected
+[2025-04-21T05:23:38.348Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:23:38.349Z] [INFO] MQTT client disconnected
+[2025-04-21T05:23:40.137Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:23:40.138Z] [INFO] MQTT client disconnected
+[2025-04-21T05:23:41.934Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:23:41.935Z] [INFO] MQTT client disconnected
+[2025-04-21T05:23:43.727Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:23:43.727Z] [INFO] MQTT client disconnected
+[2025-04-21T05:23:45.518Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:23:45.519Z] [INFO] MQTT client disconnected
+[2025-04-21T05:23:47.309Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:23:47.310Z] [INFO] MQTT client disconnected
+[2025-04-21T05:23:49.096Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:23:49.097Z] [INFO] MQTT client disconnected
+[2025-04-21T05:23:50.875Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:23:50.876Z] [INFO] MQTT client disconnected
+[2025-04-21T05:23:52.414Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:23:52.415Z] [INFO] MQTT client disconnected
+[2025-04-21T05:23:54.175Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:23:54.176Z] [INFO] MQTT client disconnected
+[2025-04-21T05:23:55.949Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:23:55.950Z] [INFO] MQTT client disconnected
+[2025-04-21T05:23:57.755Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:23:57.756Z] [INFO] MQTT client disconnected
+[2025-04-21T05:23:59.574Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:23:59.575Z] [INFO] MQTT client disconnected
+[2025-04-21T05:24:01.089Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:24:01.090Z] [INFO] MQTT client disconnected
+[2025-04-21T05:24:02.860Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:24:02.860Z] [INFO] MQTT client disconnected
+[2025-04-21T05:24:04.401Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:24:04.403Z] [INFO] MQTT client disconnected
+[2025-04-21T05:24:06.165Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:24:06.166Z] [INFO] MQTT client disconnected
+[2025-04-21T05:24:07.696Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:24:07.697Z] [INFO] MQTT client disconnected
+[2025-04-21T05:24:09.238Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:24:09.238Z] [INFO] MQTT client disconnected
+[2025-04-21T05:24:11.020Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:24:11.021Z] [INFO] MQTT client disconnected
+[2025-04-21T05:24:12.798Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:24:12.799Z] [INFO] MQTT client disconnected
+[2025-04-21T05:24:14.567Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:24:14.568Z] [INFO] MQTT client disconnected
+[2025-04-21T05:24:17.371Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:24:17.371Z] [INFO] MQTT client disconnected
+[2025-04-21T05:24:18.906Z] [ERROR] MQTT client error: Connection refused: Bad username or password
+[2025-04-21T05:24:18.906Z] [INFO] MQTT client disconnected

@@ -1,0 +1,929 @@
+[2025-05-06T02:04:12.842Z] [INFO] Alert monitor service started successfully
+[2025-05-06T02:04:12.844Z] [INFO] Starting temperature prediction service with 15 minute interval
+[2025-05-06T02:04:12.845Z] [INFO] Running temperature prediction for next hour
+[2025-05-06T02:04:20.891Z] [INFO] Prediction result: {"error":"'charmap' codec can't encode character '\\u1ed7' in position 1: character maps to <undefined>","temperature":0,"confidence":0}
+[2025-05-06T02:04:20.951Z] [ERROR] Error parsing prediction data: Cannot read properties of undefined (reading 'map')
+[2025-05-06T02:05:12.955Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:05:12.971Z] [INFO] Creating alert: humidity is high at 80.0Percentage (threshold: 70Percentage)
+[2025-05-06T02:05:12.987Z] [INFO] Alert created with ID: 67
+[2025-05-06T02:05:12.990Z] [INFO] Creating alert: temperature is high at 50.0Celsius (threshold: 30Celsius)
+[2025-05-06T02:05:12.992Z] [INFO] Alert created with ID: 68
+[2025-05-06T02:06:12.859Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:07:12.859Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:08:12.860Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:09:12.875Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:10:12.886Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:11:12.901Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:12:12.910Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:13:12.920Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:14:12.920Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:15:12.934Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:16:12.943Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:17:12.946Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:18:12.959Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:19:12.861Z] [INFO] Running temperature prediction for next hour
+[2025-05-06T02:19:12.972Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:19:18.968Z] [INFO] Prediction result: {"error":"'charmap' codec can't encode character '\\u1ed7' in position 1: character maps to <undefined>","temperature":0,"confidence":0}
+[2025-05-06T02:19:18.970Z] [ERROR] Error parsing prediction data: Cannot read properties of undefined (reading 'map')
+[2025-05-06T02:20:12.976Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:21:12.979Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:22:12.984Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:23:12.988Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:24:12.989Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:25:12.993Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:26:12.999Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:26:13.005Z] [INFO] Auto-resolving alert ID 70 as condition is no longer active
+[2025-05-06T02:27:13.000Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:28:13.013Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:29:13.018Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:30:13.028Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:31:13.034Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:32:13.035Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:33:13.045Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:34:12.872Z] [INFO] Running temperature prediction for next hour
+[2025-05-06T02:34:13.046Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:34:13.993Z] [INFO] Prediction result: {"error":"'charmap' codec can't encode character '\\u1ed7' in position 1: character maps to <undefined>","temperature":0,"confidence":0}
+[2025-05-06T02:34:13.995Z] [ERROR] Error parsing prediction data: Cannot read properties of undefined (reading 'map')
+[2025-05-06T02:35:13.061Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:35:31.770Z] [INFO] Alert monitor service started successfully
+[2025-05-06T02:35:31.771Z] [INFO] Starting temperature prediction service with 15 minute interval
+[2025-05-06T02:35:31.772Z] [INFO] Running temperature prediction for next hour
+[2025-05-06T02:35:32.868Z] [INFO] Prediction result: {"error":"'charmap' codec can't encode character '\\u1ed7' in position 1: character maps to <undefined>","temperature":0,"confidence":0}
+[2025-05-06T02:35:32.873Z] [ERROR] Error parsing prediction data: Cannot read properties of undefined (reading 'map')
+[2025-05-06T02:36:31.784Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:36:31.831Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T02:36:31.835Z] [INFO] Alert created with ID: 71
+[2025-05-06T02:36:31.837Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T02:36:31.838Z] [INFO] Alert created with ID: 72
+[2025-05-06T02:37:31.790Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:37:31.833Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T02:37:31.836Z] [INFO] Alert created with ID: 73
+[2025-05-06T02:37:31.837Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T02:37:31.838Z] [INFO] Alert created with ID: 74
+[2025-05-06T02:38:31.795Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:38:31.798Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T02:38:31.800Z] [INFO] Alert created with ID: 75
+[2025-05-06T02:38:31.802Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T02:38:31.803Z] [INFO] Alert created with ID: 76
+[2025-05-06T02:39:31.804Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:39:31.854Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T02:39:31.856Z] [INFO] Alert created with ID: 77
+[2025-05-06T02:39:31.857Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T02:39:31.858Z] [INFO] Alert created with ID: 78
+[2025-05-06T02:40:31.809Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:40:31.851Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T02:40:31.853Z] [INFO] Alert created with ID: 79
+[2025-05-06T02:40:31.854Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T02:40:31.855Z] [INFO] Alert created with ID: 80
+[2025-05-06T02:41:31.819Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:41:31.863Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T02:41:31.865Z] [INFO] Alert created with ID: 81
+[2025-05-06T02:41:31.866Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T02:41:31.868Z] [INFO] Alert created with ID: 82
+[2025-05-06T02:42:31.822Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:42:31.844Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T02:42:31.853Z] [INFO] Alert created with ID: 83
+[2025-05-06T02:42:31.857Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T02:42:31.860Z] [INFO] Alert created with ID: 84
+[2025-05-06T02:43:31.836Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:43:31.842Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T02:43:31.845Z] [INFO] Alert created with ID: 85
+[2025-05-06T02:43:31.846Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T02:43:31.847Z] [INFO] Alert created with ID: 86
+[2025-05-06T02:44:31.843Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:44:31.853Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T02:44:31.857Z] [INFO] Alert created with ID: 87
+[2025-05-06T02:44:31.860Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T02:44:31.865Z] [INFO] Alert created with ID: 88
+[2025-05-06T02:45:31.844Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:45:31.855Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T02:45:31.858Z] [INFO] Alert created with ID: 89
+[2025-05-06T02:45:31.859Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T02:45:31.862Z] [INFO] Alert created with ID: 90
+[2025-05-06T02:46:31.855Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:46:31.899Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T02:46:31.901Z] [INFO] Alert created with ID: 91
+[2025-05-06T02:46:31.902Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T02:46:31.903Z] [INFO] Alert created with ID: 92
+[2025-05-06T02:47:31.855Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:47:31.895Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T02:47:31.897Z] [INFO] Alert created with ID: 93
+[2025-05-06T02:47:31.898Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T02:47:31.899Z] [INFO] Alert created with ID: 94
+[2025-05-06T02:48:31.860Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:48:31.899Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T02:48:31.902Z] [INFO] Alert created with ID: 95
+[2025-05-06T02:48:31.903Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T02:48:31.904Z] [INFO] Alert created with ID: 96
+[2025-05-06T02:49:31.869Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:49:31.907Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T02:49:31.910Z] [INFO] Alert created with ID: 97
+[2025-05-06T02:49:31.911Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T02:49:31.912Z] [INFO] Alert created with ID: 98
+[2025-05-06T02:50:31.797Z] [INFO] Running temperature prediction for next hour
+[2025-05-06T02:50:31.877Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:50:31.912Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T02:50:31.914Z] [INFO] Alert created with ID: 99
+[2025-05-06T02:50:31.915Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T02:50:31.916Z] [INFO] Alert created with ID: 100
+[2025-05-06T02:50:33.027Z] [INFO] Prediction result: {"error":"'charmap' codec can't encode character '\\u1ed7' in position 1: character maps to <undefined>","temperature":0,"confidence":0}
+[2025-05-06T02:50:33.029Z] [ERROR] Error parsing prediction data: Cannot read properties of undefined (reading 'map')
+[2025-05-06T02:51:31.881Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:51:31.924Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T02:51:31.926Z] [INFO] Alert created with ID: 101
+[2025-05-06T02:51:31.927Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T02:51:31.928Z] [INFO] Alert created with ID: 102
+[2025-05-06T02:52:31.892Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T02:52:32.040Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T02:52:32.044Z] [INFO] Alert created with ID: 103
+[2025-05-06T02:52:32.046Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T02:52:32.047Z] [INFO] Alert created with ID: 104
+[2025-05-06T05:45:51.966Z] [INFO] Alert monitor service started successfully
+[2025-05-06T05:45:51.967Z] [INFO] Starting temperature prediction service with 15 minute interval
+[2025-05-06T05:45:51.967Z] [INFO] Running temperature prediction for next hour
+[2025-05-06T05:45:58.911Z] [INFO] Prediction result: {"error":"'charmap' codec can't encode character '\\u1ed7' in position 1: character maps to <undefined>","temperature":0,"confidence":0}
+[2025-05-06T05:45:58.916Z] [ERROR] Error parsing prediction data: Cannot read properties of undefined (reading 'map')
+[2025-05-06T05:46:51.979Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T05:46:51.983Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T05:46:51.986Z] [INFO] Alert created with ID: 105
+[2025-05-06T05:46:51.987Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T05:46:51.988Z] [INFO] Alert created with ID: 106
+[2025-05-06T05:47:51.982Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T05:47:51.988Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T05:47:51.992Z] [INFO] Alert created with ID: 107
+[2025-05-06T05:47:51.993Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T05:47:51.994Z] [INFO] Alert created with ID: 108
+[2025-05-06T05:48:51.995Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T05:48:51.998Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T05:48:52.001Z] [INFO] Alert created with ID: 109
+[2025-05-06T05:48:52.003Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T05:48:52.004Z] [INFO] Alert created with ID: 110
+[2025-05-06T05:49:51.998Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T05:49:52.008Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T05:49:52.014Z] [INFO] Alert created with ID: 111
+[2025-05-06T05:49:52.017Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T05:49:52.018Z] [INFO] Alert created with ID: 112
+[2025-05-06T05:50:52.002Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T05:50:52.014Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T05:50:52.018Z] [INFO] Alert created with ID: 113
+[2025-05-06T05:50:52.021Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T05:50:52.023Z] [INFO] Alert created with ID: 114
+[2025-05-06T05:51:52.003Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T05:51:52.011Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T05:51:52.014Z] [INFO] Alert created with ID: 115
+[2025-05-06T05:51:52.017Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T05:51:52.018Z] [INFO] Alert created with ID: 116
+[2025-05-06T05:52:52.012Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T05:52:52.017Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T05:52:52.019Z] [INFO] Alert created with ID: 117
+[2025-05-06T05:52:52.020Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T05:52:52.023Z] [INFO] Alert created with ID: 118
+[2025-05-06T05:53:52.018Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T05:53:52.022Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T05:53:52.024Z] [INFO] Alert created with ID: 119
+[2025-05-06T05:53:52.026Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T05:53:52.027Z] [INFO] Alert created with ID: 120
+[2025-05-06T05:54:52.029Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T05:54:52.037Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T05:54:52.041Z] [INFO] Alert created with ID: 121
+[2025-05-06T05:54:52.043Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T05:54:52.044Z] [INFO] Alert created with ID: 122
+[2025-05-06T05:55:52.042Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T05:55:52.087Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T05:55:52.090Z] [INFO] Alert created with ID: 123
+[2025-05-06T05:55:52.091Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T05:55:52.091Z] [INFO] Alert created with ID: 124
+[2025-05-06T05:56:52.047Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T05:56:52.093Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T05:56:52.095Z] [INFO] Alert created with ID: 125
+[2025-05-06T05:56:52.096Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T05:56:52.097Z] [INFO] Alert created with ID: 126
+[2025-05-06T05:57:52.055Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T05:57:52.113Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T05:57:52.115Z] [INFO] Alert created with ID: 127
+[2025-05-06T05:57:52.117Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T05:57:52.118Z] [INFO] Alert created with ID: 128
+[2025-05-06T05:58:52.063Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T05:58:52.109Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T05:58:52.112Z] [INFO] Alert created with ID: 129
+[2025-05-06T05:58:52.113Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T05:58:52.113Z] [INFO] Alert created with ID: 130
+[2025-05-06T05:59:52.078Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T05:59:52.125Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T05:59:52.128Z] [INFO] Alert created with ID: 131
+[2025-05-06T05:59:52.129Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T05:59:52.131Z] [INFO] Alert created with ID: 132
+[2025-05-06T06:00:51.978Z] [INFO] Running temperature prediction for next hour
+[2025-05-06T06:00:52.088Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:00:52.125Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:00:52.128Z] [INFO] Alert created with ID: 133
+[2025-05-06T06:00:52.129Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:00:52.130Z] [INFO] Alert created with ID: 134
+[2025-05-06T06:00:53.078Z] [INFO] Prediction result: {"error":"'charmap' codec can't encode character '\\u1ed7' in position 1: character maps to <undefined>","temperature":0,"confidence":0}
+[2025-05-06T06:00:53.080Z] [ERROR] Error parsing prediction data: Cannot read properties of undefined (reading 'map')
+[2025-05-06T06:01:52.094Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:01:52.138Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:01:52.140Z] [INFO] Alert created with ID: 135
+[2025-05-06T06:01:52.141Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:01:52.142Z] [INFO] Alert created with ID: 136
+[2025-05-06T06:02:52.110Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:02:52.160Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:02:52.162Z] [INFO] Alert created with ID: 137
+[2025-05-06T06:02:52.163Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:02:52.164Z] [INFO] Alert created with ID: 138
+[2025-05-06T06:03:52.123Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:03:52.165Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:03:52.167Z] [INFO] Alert created with ID: 139
+[2025-05-06T06:03:52.168Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:03:52.169Z] [INFO] Alert created with ID: 140
+[2025-05-06T06:04:52.134Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:04:52.172Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:04:52.174Z] [INFO] Alert created with ID: 141
+[2025-05-06T06:04:52.175Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:04:52.176Z] [INFO] Alert created with ID: 142
+[2025-05-06T06:05:52.135Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:05:52.175Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:05:52.178Z] [INFO] Alert created with ID: 143
+[2025-05-06T06:05:52.179Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:05:52.180Z] [INFO] Alert created with ID: 144
+[2025-05-06T06:07:00.988Z] [INFO] Alert monitor service started successfully
+[2025-05-06T06:07:00.990Z] [INFO] Starting temperature prediction service with 15 minute interval
+[2025-05-06T06:07:00.991Z] [INFO] Running temperature prediction for next hour
+[2025-05-06T06:07:02.094Z] [INFO] Prediction result: {"error":"'charmap' codec can't encode character '\\u1ed7' in position 1: character maps to <undefined>","temperature":0,"confidence":0}
+[2025-05-06T06:07:02.097Z] [ERROR] Error parsing prediction data: Cannot read properties of undefined (reading 'map')
+[2025-05-06T06:08:00.990Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:08:00.996Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:08:01.000Z] [INFO] Alert created with ID: 145
+[2025-05-06T06:08:01.003Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:08:01.008Z] [INFO] Alert created with ID: 146
+[2025-05-06T06:09:00.995Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:09:01.042Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:09:01.045Z] [INFO] Alert created with ID: 147
+[2025-05-06T06:09:01.047Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:09:01.049Z] [INFO] Alert created with ID: 148
+[2025-05-06T06:10:00.996Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:10:01.042Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:10:01.045Z] [INFO] Alert created with ID: 149
+[2025-05-06T06:10:01.047Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:10:01.048Z] [INFO] Alert created with ID: 150
+[2025-05-06T06:11:01.004Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:11:01.043Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:11:01.046Z] [INFO] Alert created with ID: 151
+[2025-05-06T06:11:01.048Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:11:01.049Z] [INFO] Alert created with ID: 152
+[2025-05-06T06:12:01.016Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:12:01.054Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:12:01.057Z] [INFO] Alert created with ID: 153
+[2025-05-06T06:12:01.058Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:12:01.059Z] [INFO] Alert created with ID: 154
+[2025-05-06T06:13:01.020Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:13:01.026Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:13:01.032Z] [INFO] Alert created with ID: 155
+[2025-05-06T06:13:01.034Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:13:01.037Z] [INFO] Alert created with ID: 156
+[2025-05-06T06:14:01.031Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:14:01.039Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:14:01.043Z] [INFO] Alert created with ID: 157
+[2025-05-06T06:14:01.045Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:14:01.046Z] [INFO] Alert created with ID: 158
+[2025-05-06T06:15:01.038Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:15:01.046Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:15:01.051Z] [INFO] Alert created with ID: 159
+[2025-05-06T06:15:01.053Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:15:01.055Z] [INFO] Alert created with ID: 160
+[2025-05-06T06:16:01.044Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:16:01.052Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:16:01.055Z] [INFO] Alert created with ID: 161
+[2025-05-06T06:16:01.056Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:16:01.058Z] [INFO] Alert created with ID: 162
+[2025-05-06T06:17:01.056Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:17:01.068Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:17:01.072Z] [INFO] Alert created with ID: 163
+[2025-05-06T06:17:01.076Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:17:01.078Z] [INFO] Alert created with ID: 164
+[2025-05-06T06:18:01.071Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:18:01.079Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:18:01.089Z] [INFO] Alert created with ID: 165
+[2025-05-06T06:18:01.093Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:18:01.097Z] [INFO] Alert created with ID: 166
+[2025-05-06T06:19:01.073Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:19:01.083Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:19:01.086Z] [INFO] Alert created with ID: 167
+[2025-05-06T06:19:01.088Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:19:01.089Z] [INFO] Alert created with ID: 168
+[2025-05-06T06:20:01.077Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:20:01.086Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:20:01.091Z] [INFO] Alert created with ID: 169
+[2025-05-06T06:20:01.094Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:20:01.096Z] [INFO] Alert created with ID: 170
+[2025-05-06T06:21:01.089Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:21:01.098Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:21:01.101Z] [INFO] Alert created with ID: 171
+[2025-05-06T06:21:01.103Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:21:01.104Z] [INFO] Alert created with ID: 172
+[2025-05-06T06:22:01.004Z] [INFO] Running temperature prediction for next hour
+[2025-05-06T06:22:01.097Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:22:01.100Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:22:01.103Z] [INFO] Alert created with ID: 173
+[2025-05-06T06:22:01.104Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:22:01.105Z] [INFO] Alert created with ID: 174
+[2025-05-06T06:22:02.107Z] [INFO] Prediction result: {"error":"'charmap' codec can't encode character '\\u1ed7' in position 1: character maps to <undefined>","temperature":0,"confidence":0}
+[2025-05-06T06:22:02.109Z] [ERROR] Error parsing prediction data: Cannot read properties of undefined (reading 'map')
+[2025-05-06T06:23:01.108Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:23:01.118Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:23:01.121Z] [INFO] Alert created with ID: 175
+[2025-05-06T06:23:01.124Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:23:01.126Z] [INFO] Alert created with ID: 176
+[2025-05-06T06:24:01.123Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:24:01.132Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:24:01.139Z] [INFO] Alert created with ID: 177
+[2025-05-06T06:24:01.141Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:24:01.142Z] [INFO] Alert created with ID: 178
+[2025-05-06T06:25:01.132Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:25:01.140Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:25:01.142Z] [INFO] Alert created with ID: 179
+[2025-05-06T06:25:01.143Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:25:01.145Z] [INFO] Alert created with ID: 180
+[2025-05-06T06:26:01.144Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:26:01.154Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:26:01.158Z] [INFO] Alert created with ID: 181
+[2025-05-06T06:26:01.160Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:26:01.161Z] [INFO] Alert created with ID: 182
+[2025-05-06T06:27:01.151Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:27:01.161Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:27:01.166Z] [INFO] Alert created with ID: 183
+[2025-05-06T06:27:01.170Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:27:01.173Z] [INFO] Alert created with ID: 184
+[2025-05-06T06:28:01.162Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:28:01.165Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:28:01.168Z] [INFO] Alert created with ID: 185
+[2025-05-06T06:28:01.169Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:28:01.170Z] [INFO] Alert created with ID: 186
+[2025-05-06T06:29:01.169Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:29:01.174Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:29:01.176Z] [INFO] Alert created with ID: 187
+[2025-05-06T06:29:01.178Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:29:01.180Z] [INFO] Alert created with ID: 188
+[2025-05-06T06:30:01.183Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:30:01.187Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:30:01.190Z] [INFO] Alert created with ID: 189
+[2025-05-06T06:30:01.192Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:30:01.193Z] [INFO] Alert created with ID: 190
+[2025-05-06T06:31:01.184Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:31:01.192Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:31:01.195Z] [INFO] Alert created with ID: 191
+[2025-05-06T06:31:01.198Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:31:01.200Z] [INFO] Alert created with ID: 192
+[2025-05-06T06:32:01.186Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:32:01.197Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:32:01.200Z] [INFO] Alert created with ID: 193
+[2025-05-06T06:32:01.203Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:32:01.205Z] [INFO] Alert created with ID: 194
+[2025-05-06T06:33:01.195Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:33:01.204Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:33:01.206Z] [INFO] Alert created with ID: 195
+[2025-05-06T06:33:01.208Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:33:01.209Z] [INFO] Alert created with ID: 196
+[2025-05-06T06:34:01.195Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:34:01.202Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:34:01.205Z] [INFO] Alert created with ID: 197
+[2025-05-06T06:34:01.206Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:34:01.208Z] [INFO] Alert created with ID: 198
+[2025-05-06T06:35:01.210Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:35:01.217Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:35:01.220Z] [INFO] Alert created with ID: 199
+[2025-05-06T06:35:01.221Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:35:01.222Z] [INFO] Alert created with ID: 200
+[2025-05-06T06:36:01.213Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:36:01.221Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:36:01.227Z] [INFO] Alert created with ID: 201
+[2025-05-06T06:36:01.228Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:36:01.230Z] [INFO] Alert created with ID: 202
+[2025-05-06T06:37:01.017Z] [INFO] Running temperature prediction for next hour
+[2025-05-06T06:37:01.222Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:37:01.225Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:37:01.228Z] [INFO] Alert created with ID: 203
+[2025-05-06T06:37:01.229Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:37:01.230Z] [INFO] Alert created with ID: 204
+[2025-05-06T06:37:02.121Z] [INFO] Prediction result: {"error":"'charmap' codec can't encode character '\\u1ed7' in position 1: character maps to <undefined>","temperature":0,"confidence":0}
+[2025-05-06T06:37:02.123Z] [ERROR] Error parsing prediction data: Cannot read properties of undefined (reading 'map')
+[2025-05-06T06:38:01.233Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:38:01.241Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:38:01.244Z] [INFO] Alert created with ID: 205
+[2025-05-06T06:38:01.247Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:38:01.248Z] [INFO] Alert created with ID: 206
+[2025-05-06T06:39:01.235Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:39:01.243Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:39:01.247Z] [INFO] Alert created with ID: 207
+[2025-05-06T06:39:01.250Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:39:01.252Z] [INFO] Alert created with ID: 208
+[2025-05-06T06:40:01.236Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:40:01.245Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:40:01.250Z] [INFO] Alert created with ID: 209
+[2025-05-06T06:40:01.252Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:40:01.255Z] [INFO] Alert created with ID: 210
+[2025-05-06T06:41:01.248Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:41:01.257Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:41:01.262Z] [INFO] Alert created with ID: 211
+[2025-05-06T06:41:01.266Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:41:01.268Z] [INFO] Alert created with ID: 212
+[2025-05-06T06:42:01.261Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:42:01.264Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:42:01.267Z] [INFO] Alert created with ID: 213
+[2025-05-06T06:42:01.268Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:42:01.269Z] [INFO] Alert created with ID: 214
+[2025-05-06T06:43:01.274Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:43:01.277Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:43:01.279Z] [INFO] Alert created with ID: 215
+[2025-05-06T06:43:01.280Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:43:01.282Z] [INFO] Alert created with ID: 216
+[2025-05-06T06:44:01.288Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:44:01.291Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:44:01.293Z] [INFO] Alert created with ID: 217
+[2025-05-06T06:44:01.295Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:44:01.295Z] [INFO] Alert created with ID: 218
+[2025-05-06T06:45:01.297Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:45:01.304Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:45:01.307Z] [INFO] Alert created with ID: 219
+[2025-05-06T06:45:01.308Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:45:01.309Z] [INFO] Alert created with ID: 220
+[2025-05-06T06:46:01.299Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:46:01.304Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:46:01.308Z] [INFO] Alert created with ID: 221
+[2025-05-06T06:46:01.310Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:46:01.311Z] [INFO] Alert created with ID: 222
+[2025-05-06T06:47:01.312Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:47:01.319Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:47:01.321Z] [INFO] Alert created with ID: 223
+[2025-05-06T06:47:01.322Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:47:01.324Z] [INFO] Alert created with ID: 224
+[2025-05-06T06:48:01.313Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:48:01.316Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:48:01.318Z] [INFO] Alert created with ID: 225
+[2025-05-06T06:48:01.319Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:48:01.321Z] [INFO] Alert created with ID: 226
+[2025-05-06T06:49:01.319Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:49:01.326Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:49:01.330Z] [INFO] Alert created with ID: 227
+[2025-05-06T06:49:01.333Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:49:01.334Z] [INFO] Alert created with ID: 228
+[2025-05-06T06:50:01.320Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:50:01.328Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:50:01.333Z] [INFO] Alert created with ID: 229
+[2025-05-06T06:50:01.334Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:50:01.335Z] [INFO] Alert created with ID: 230
+[2025-05-06T06:51:01.330Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:51:01.333Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:51:01.335Z] [INFO] Alert created with ID: 231
+[2025-05-06T06:51:01.336Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:51:01.337Z] [INFO] Alert created with ID: 232
+[2025-05-06T06:52:01.024Z] [INFO] Running temperature prediction for next hour
+[2025-05-06T06:52:01.341Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:52:01.344Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:52:01.346Z] [INFO] Alert created with ID: 233
+[2025-05-06T06:52:01.347Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:52:01.348Z] [INFO] Alert created with ID: 234
+[2025-05-06T06:52:02.161Z] [INFO] Prediction result: {"error":"'charmap' codec can't encode character '\\u1ed7' in position 1: character maps to <undefined>","temperature":0,"confidence":0}
+[2025-05-06T06:52:02.163Z] [ERROR] Error parsing prediction data: Cannot read properties of undefined (reading 'map')
+[2025-05-06T06:53:01.345Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:53:01.356Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:53:01.363Z] [INFO] Alert created with ID: 235
+[2025-05-06T06:53:01.365Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:53:01.369Z] [INFO] Alert created with ID: 236
+[2025-05-06T06:54:01.350Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:54:01.359Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:54:01.362Z] [INFO] Alert created with ID: 237
+[2025-05-06T06:54:01.364Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:54:01.365Z] [INFO] Alert created with ID: 238
+[2025-05-06T06:55:01.354Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:55:01.363Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:55:01.366Z] [INFO] Alert created with ID: 239
+[2025-05-06T06:55:01.369Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:55:01.370Z] [INFO] Alert created with ID: 240
+[2025-05-06T06:56:01.366Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:56:01.379Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:56:01.389Z] [INFO] Alert created with ID: 241
+[2025-05-06T06:56:01.393Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:56:01.397Z] [INFO] Alert created with ID: 242
+[2025-05-06T06:57:01.375Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:57:01.377Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:57:01.379Z] [INFO] Alert created with ID: 243
+[2025-05-06T06:57:01.381Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:57:01.383Z] [INFO] Alert created with ID: 244
+[2025-05-06T06:58:01.376Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:58:01.387Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:58:01.393Z] [INFO] Alert created with ID: 245
+[2025-05-06T06:58:01.395Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:58:01.397Z] [INFO] Alert created with ID: 246
+[2025-05-06T06:59:01.387Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T06:59:01.397Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T06:59:01.403Z] [INFO] Alert created with ID: 247
+[2025-05-06T06:59:01.407Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T06:59:01.409Z] [INFO] Alert created with ID: 248
+[2025-05-06T07:00:01.387Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:00:01.391Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:00:01.394Z] [INFO] Alert created with ID: 249
+[2025-05-06T07:00:01.395Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:00:01.397Z] [INFO] Alert created with ID: 250
+[2025-05-06T07:01:01.392Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:01:01.396Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:01:01.399Z] [INFO] Alert created with ID: 251
+[2025-05-06T07:01:01.400Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:01:01.402Z] [INFO] Alert created with ID: 252
+[2025-05-06T07:02:01.403Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:02:01.406Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:02:01.408Z] [INFO] Alert created with ID: 253
+[2025-05-06T07:02:01.410Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:02:01.411Z] [INFO] Alert created with ID: 254
+[2025-05-06T07:03:01.404Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:03:01.408Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:03:01.411Z] [INFO] Alert created with ID: 255
+[2025-05-06T07:03:01.413Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:03:01.414Z] [INFO] Alert created with ID: 256
+[2025-05-06T07:04:01.413Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:04:01.420Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:04:01.423Z] [INFO] Alert created with ID: 257
+[2025-05-06T07:04:01.424Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:04:01.426Z] [INFO] Alert created with ID: 258
+[2025-05-06T07:05:01.425Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:05:01.428Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:05:01.430Z] [INFO] Alert created with ID: 259
+[2025-05-06T07:05:01.432Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:05:01.433Z] [INFO] Alert created with ID: 260
+[2025-05-06T07:06:01.429Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:06:01.432Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:06:01.434Z] [INFO] Alert created with ID: 261
+[2025-05-06T07:06:01.436Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:06:01.438Z] [INFO] Alert created with ID: 262
+[2025-05-06T07:07:01.035Z] [INFO] Running temperature prediction for next hour
+[2025-05-06T07:07:01.442Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:07:01.445Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:07:01.447Z] [INFO] Alert created with ID: 263
+[2025-05-06T07:07:01.448Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:07:01.450Z] [INFO] Alert created with ID: 264
+[2025-05-06T07:07:02.136Z] [INFO] Prediction result: {"error":"'charmap' codec can't encode character '\\u1ed7' in position 1: character maps to <undefined>","temperature":0,"confidence":0}
+[2025-05-06T07:07:02.139Z] [ERROR] Error parsing prediction data: Cannot read properties of undefined (reading 'map')
+[2025-05-06T07:08:01.455Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:08:01.463Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:08:01.466Z] [INFO] Alert created with ID: 265
+[2025-05-06T07:08:01.467Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:08:01.468Z] [INFO] Alert created with ID: 266
+[2025-05-06T07:09:01.466Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:09:01.474Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:09:01.479Z] [INFO] Alert created with ID: 267
+[2025-05-06T07:09:01.481Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:09:01.482Z] [INFO] Alert created with ID: 268
+[2025-05-06T07:10:01.478Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:10:01.487Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:10:01.494Z] [INFO] Alert created with ID: 269
+[2025-05-06T07:10:01.496Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:10:01.497Z] [INFO] Alert created with ID: 270
+[2025-05-06T07:11:01.487Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:11:01.495Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:11:01.499Z] [INFO] Alert created with ID: 271
+[2025-05-06T07:11:01.500Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:11:01.501Z] [INFO] Alert created with ID: 272
+[2025-05-06T07:12:01.498Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:12:01.504Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:12:01.508Z] [INFO] Alert created with ID: 273
+[2025-05-06T07:12:01.511Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:12:01.512Z] [INFO] Alert created with ID: 274
+[2025-05-06T07:13:01.503Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:13:01.512Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:13:01.514Z] [INFO] Alert created with ID: 275
+[2025-05-06T07:13:01.516Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:13:01.517Z] [INFO] Alert created with ID: 276
+[2025-05-06T07:14:01.508Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:14:01.518Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:14:01.522Z] [INFO] Alert created with ID: 277
+[2025-05-06T07:14:01.526Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:14:01.530Z] [INFO] Alert created with ID: 278
+[2025-05-06T07:15:01.518Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:15:01.525Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:15:01.528Z] [INFO] Alert created with ID: 279
+[2025-05-06T07:15:01.529Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:15:01.530Z] [INFO] Alert created with ID: 280
+[2025-05-06T07:16:01.527Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:16:01.531Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:16:01.533Z] [INFO] Alert created with ID: 281
+[2025-05-06T07:16:01.535Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:16:01.536Z] [INFO] Alert created with ID: 282
+[2025-05-06T07:17:01.538Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:17:01.544Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:17:01.546Z] [INFO] Alert created with ID: 283
+[2025-05-06T07:17:01.548Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:17:01.549Z] [INFO] Alert created with ID: 284
+[2025-05-06T07:18:01.548Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:18:01.555Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:18:01.558Z] [INFO] Alert created with ID: 285
+[2025-05-06T07:18:01.559Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:18:01.561Z] [INFO] Alert created with ID: 286
+[2025-05-06T07:19:01.553Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:19:01.561Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:19:01.564Z] [INFO] Alert created with ID: 287
+[2025-05-06T07:19:01.567Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:19:01.568Z] [INFO] Alert created with ID: 288
+[2025-05-06T07:20:01.560Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:20:01.565Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:20:01.569Z] [INFO] Alert created with ID: 289
+[2025-05-06T07:20:01.570Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:20:01.571Z] [INFO] Alert created with ID: 290
+[2025-05-06T07:21:01.575Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:21:01.584Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:21:01.590Z] [INFO] Alert created with ID: 291
+[2025-05-06T07:21:01.593Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:21:01.596Z] [INFO] Alert created with ID: 292
+[2025-05-06T07:22:01.046Z] [INFO] Running temperature prediction for next hour
+[2025-05-06T07:22:01.583Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:22:01.586Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:22:01.589Z] [INFO] Alert created with ID: 293
+[2025-05-06T07:22:01.590Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:22:01.591Z] [INFO] Alert created with ID: 294
+[2025-05-06T07:22:02.168Z] [INFO] Prediction result: {"error":"'charmap' codec can't encode character '\\u1ed7' in position 1: character maps to <undefined>","temperature":0,"confidence":0}
+[2025-05-06T07:22:02.170Z] [ERROR] Error parsing prediction data: Cannot read properties of undefined (reading 'map')
+[2025-05-06T07:23:01.584Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:23:01.593Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:23:01.597Z] [INFO] Alert created with ID: 295
+[2025-05-06T07:23:01.599Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:23:01.600Z] [INFO] Alert created with ID: 296
+[2025-05-06T07:24:01.585Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:24:01.595Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:24:01.598Z] [INFO] Alert created with ID: 297
+[2025-05-06T07:24:01.600Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:24:01.600Z] [INFO] Alert created with ID: 298
+[2025-05-06T07:25:01.587Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:25:01.598Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:25:01.604Z] [INFO] Alert created with ID: 299
+[2025-05-06T07:25:01.608Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:25:01.610Z] [INFO] Alert created with ID: 300
+[2025-05-06T07:26:01.600Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:26:01.608Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:26:01.612Z] [INFO] Alert created with ID: 301
+[2025-05-06T07:26:01.617Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:26:01.621Z] [INFO] Alert created with ID: 302
+[2025-05-06T07:27:01.603Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:27:01.608Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:27:01.611Z] [INFO] Alert created with ID: 303
+[2025-05-06T07:27:01.612Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:27:01.613Z] [INFO] Alert created with ID: 304
+[2025-05-06T07:28:01.617Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:28:01.630Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:28:01.636Z] [INFO] Alert created with ID: 305
+[2025-05-06T07:28:01.639Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:28:01.641Z] [INFO] Alert created with ID: 306
+[2025-05-06T07:29:01.627Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:29:01.631Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:29:01.633Z] [INFO] Alert created with ID: 307
+[2025-05-06T07:29:01.634Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:29:01.636Z] [INFO] Alert created with ID: 308
+[2025-05-06T07:30:01.631Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:30:01.634Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:30:01.636Z] [INFO] Alert created with ID: 309
+[2025-05-06T07:30:01.638Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:30:01.639Z] [INFO] Alert created with ID: 310
+[2025-05-06T07:31:01.640Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:31:01.645Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:31:01.650Z] [INFO] Alert created with ID: 311
+[2025-05-06T07:31:01.651Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:31:01.653Z] [INFO] Alert created with ID: 312
+[2025-05-06T07:32:01.641Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:32:01.644Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:32:01.646Z] [INFO] Alert created with ID: 313
+[2025-05-06T07:32:01.648Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:32:01.650Z] [INFO] Alert created with ID: 314
+[2025-05-06T07:33:01.647Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:33:01.657Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:33:01.665Z] [INFO] Alert created with ID: 315
+[2025-05-06T07:33:01.670Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:33:01.674Z] [INFO] Alert created with ID: 316
+[2025-05-06T07:34:01.660Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:34:01.665Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:34:01.667Z] [INFO] Alert created with ID: 317
+[2025-05-06T07:34:01.669Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:34:01.671Z] [INFO] Alert created with ID: 318
+[2025-05-06T07:35:01.663Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:35:01.666Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:35:01.668Z] [INFO] Alert created with ID: 319
+[2025-05-06T07:35:01.670Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:35:01.671Z] [INFO] Alert created with ID: 320
+[2025-05-06T07:36:01.677Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:36:01.685Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:36:01.689Z] [INFO] Alert created with ID: 321
+[2025-05-06T07:36:01.690Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:36:01.692Z] [INFO] Alert created with ID: 322
+[2025-05-06T07:37:01.051Z] [INFO] Running temperature prediction for next hour
+[2025-05-06T07:37:01.680Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:37:01.683Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:37:01.686Z] [INFO] Alert created with ID: 323
+[2025-05-06T07:37:01.687Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:37:01.688Z] [INFO] Alert created with ID: 324
+[2025-05-06T07:37:02.182Z] [INFO] Prediction result: {"error":"'charmap' codec can't encode character '\\u1ed7' in position 1: character maps to <undefined>","temperature":0,"confidence":0}
+[2025-05-06T07:37:02.184Z] [ERROR] Error parsing prediction data: Cannot read properties of undefined (reading 'map')
+[2025-05-06T07:38:01.685Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:38:01.695Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:38:01.702Z] [INFO] Alert created with ID: 325
+[2025-05-06T07:38:01.706Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:38:01.710Z] [INFO] Alert created with ID: 326
+[2025-05-06T07:39:01.686Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:39:01.697Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:39:01.706Z] [INFO] Alert created with ID: 327
+[2025-05-06T07:39:01.711Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:39:01.715Z] [INFO] Alert created with ID: 328
+[2025-05-06T07:40:01.688Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:40:01.698Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:40:01.706Z] [INFO] Alert created with ID: 329
+[2025-05-06T07:40:01.708Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:40:01.711Z] [INFO] Alert created with ID: 330
+[2025-05-06T07:41:01.692Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:41:01.699Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:41:01.702Z] [INFO] Alert created with ID: 331
+[2025-05-06T07:41:01.703Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:41:01.704Z] [INFO] Alert created with ID: 332
+[2025-05-06T07:42:01.705Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:42:01.713Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:42:01.716Z] [INFO] Alert created with ID: 333
+[2025-05-06T07:42:01.718Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:42:01.720Z] [INFO] Alert created with ID: 334
+[2025-05-06T07:43:01.720Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:43:01.724Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:43:01.726Z] [INFO] Alert created with ID: 335
+[2025-05-06T07:43:01.727Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:43:01.729Z] [INFO] Alert created with ID: 336
+[2025-05-06T07:44:01.725Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:44:01.728Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:44:01.730Z] [INFO] Alert created with ID: 337
+[2025-05-06T07:44:01.732Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:44:01.733Z] [INFO] Alert created with ID: 338
+[2025-05-06T07:45:01.725Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:45:01.734Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:45:01.737Z] [INFO] Alert created with ID: 339
+[2025-05-06T07:45:01.739Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:45:01.740Z] [INFO] Alert created with ID: 340
+[2025-05-06T07:46:01.734Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:46:01.744Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:46:01.747Z] [INFO] Alert created with ID: 341
+[2025-05-06T07:46:01.750Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:46:01.752Z] [INFO] Alert created with ID: 342
+[2025-05-06T07:47:01.736Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:47:01.745Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:47:01.750Z] [INFO] Alert created with ID: 343
+[2025-05-06T07:47:01.754Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:47:01.756Z] [INFO] Alert created with ID: 344
+[2025-05-06T07:48:01.747Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:48:01.755Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:48:01.759Z] [INFO] Alert created with ID: 345
+[2025-05-06T07:48:01.762Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:48:01.765Z] [INFO] Alert created with ID: 346
+[2025-05-06T07:49:01.762Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:49:01.766Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:49:01.769Z] [INFO] Alert created with ID: 347
+[2025-05-06T07:49:01.772Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:49:01.774Z] [INFO] Alert created with ID: 348
+[2025-05-06T07:50:12.400Z] [INFO] Alert monitor service started successfully
+[2025-05-06T07:50:12.401Z] [INFO] Starting temperature prediction service with 15 minute interval
+[2025-05-06T07:50:12.401Z] [INFO] Running temperature prediction for next hour
+[2025-05-06T07:50:13.564Z] [INFO] Prediction result: {"error":"'charmap' codec can't encode character '\\u1ed7' in position 1: character maps to <undefined>","temperature":0,"confidence":0}
+[2025-05-06T07:50:13.572Z] [ERROR] Error parsing prediction data: Cannot read properties of undefined (reading 'map')
+[2025-05-06T07:51:12.408Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:51:12.450Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:51:12.453Z] [INFO] Alert created with ID: 349
+[2025-05-06T07:51:12.454Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:51:12.455Z] [INFO] Alert created with ID: 350
+[2025-05-06T07:52:12.422Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:52:12.456Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:52:12.459Z] [INFO] Alert created with ID: 351
+[2025-05-06T07:52:12.460Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:52:12.462Z] [INFO] Alert created with ID: 352
+[2025-05-06T07:53:12.436Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:53:12.482Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:53:12.485Z] [INFO] Alert created with ID: 353
+[2025-05-06T07:53:12.487Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:53:12.489Z] [INFO] Alert created with ID: 354
+[2025-05-06T07:54:12.448Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:54:12.453Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:54:12.457Z] [INFO] Alert created with ID: 355
+[2025-05-06T07:54:12.458Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:54:12.460Z] [INFO] Alert created with ID: 356
+[2025-05-06T07:55:12.452Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:55:12.457Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:55:12.459Z] [INFO] Alert created with ID: 357
+[2025-05-06T07:55:12.460Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:55:12.461Z] [INFO] Alert created with ID: 358
+[2025-05-06T07:56:12.459Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:56:12.475Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:56:12.484Z] [INFO] Alert created with ID: 359
+[2025-05-06T07:56:12.487Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:56:12.489Z] [INFO] Alert created with ID: 360
+[2025-05-06T07:57:12.464Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:57:12.504Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:57:12.508Z] [INFO] Alert created with ID: 361
+[2025-05-06T07:57:12.509Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:57:12.511Z] [INFO] Alert created with ID: 362
+[2025-05-06T07:58:12.465Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:58:12.475Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:58:12.486Z] [INFO] Alert created with ID: 363
+[2025-05-06T07:58:12.489Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:58:12.492Z] [INFO] Alert created with ID: 364
+[2025-05-06T07:59:12.466Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T07:59:12.472Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T07:59:12.474Z] [INFO] Alert created with ID: 365
+[2025-05-06T07:59:12.475Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T07:59:12.476Z] [INFO] Alert created with ID: 366
+[2025-05-06T08:00:12.467Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T08:00:12.470Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T08:00:12.472Z] [INFO] Alert created with ID: 367
+[2025-05-06T08:00:12.473Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T08:00:12.474Z] [INFO] Alert created with ID: 368
+[2025-05-06T08:01:12.477Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T08:01:12.523Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T08:01:12.526Z] [INFO] Alert created with ID: 369
+[2025-05-06T08:01:12.527Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T08:01:12.528Z] [INFO] Alert created with ID: 370
+[2025-05-06T08:02:12.489Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T08:02:12.533Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T08:02:12.536Z] [INFO] Alert created with ID: 371
+[2025-05-06T08:02:12.538Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T08:02:12.539Z] [INFO] Alert created with ID: 372
+[2025-05-06T08:03:12.504Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T08:03:12.514Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T08:03:12.524Z] [INFO] Alert created with ID: 373
+[2025-05-06T08:03:12.526Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T08:03:12.527Z] [INFO] Alert created with ID: 374
+[2025-05-06T08:04:12.516Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T08:04:12.560Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T08:04:12.562Z] [INFO] Alert created with ID: 375
+[2025-05-06T08:04:12.563Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T08:04:12.565Z] [INFO] Alert created with ID: 376
+[2025-05-06T08:05:12.413Z] [INFO] Running temperature prediction for next hour
+[2025-05-06T08:05:12.521Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T08:05:12.564Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T08:05:12.567Z] [INFO] Alert created with ID: 377
+[2025-05-06T08:05:12.569Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T08:05:12.570Z] [INFO] Alert created with ID: 378
+[2025-05-06T08:05:13.850Z] [INFO] Prediction result: {"error":"'charmap' codec can't encode character '\\u1ed7' in position 1: character maps to <undefined>","temperature":0,"confidence":0}
+[2025-05-06T08:05:13.854Z] [ERROR] Error parsing prediction data: Cannot read properties of undefined (reading 'map')
+[2025-05-06T08:06:12.529Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T08:06:12.571Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T08:06:12.575Z] [INFO] Alert created with ID: 379
+[2025-05-06T08:06:12.576Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T08:06:12.577Z] [INFO] Alert created with ID: 380
+[2025-05-06T08:07:12.529Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T08:07:12.575Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T08:07:12.579Z] [INFO] Alert created with ID: 381
+[2025-05-06T08:07:12.581Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T08:07:12.582Z] [INFO] Alert created with ID: 382
+[2025-05-06T08:08:12.536Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T08:08:12.575Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T08:08:12.577Z] [INFO] Alert created with ID: 383
+[2025-05-06T08:08:12.578Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T08:08:12.579Z] [INFO] Alert created with ID: 384
+[2025-05-06T08:09:12.544Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T08:09:12.585Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T08:09:12.587Z] [INFO] Alert created with ID: 385
+[2025-05-06T08:09:12.588Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T08:09:12.590Z] [INFO] Alert created with ID: 386
+[2025-05-06T08:10:12.552Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T08:10:12.600Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T08:10:12.603Z] [INFO] Alert created with ID: 387
+[2025-05-06T08:10:12.604Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T08:10:12.605Z] [INFO] Alert created with ID: 388
+[2025-05-06T08:11:12.566Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T08:11:12.614Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T08:11:12.617Z] [INFO] Alert created with ID: 389
+[2025-05-06T08:11:12.618Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T08:11:12.619Z] [INFO] Alert created with ID: 390
+[2025-05-06T08:12:12.573Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T08:12:12.619Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T08:12:12.621Z] [INFO] Alert created with ID: 391
+[2025-05-06T08:12:12.623Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T08:12:12.624Z] [INFO] Alert created with ID: 392
+[2025-05-06T08:13:12.573Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T08:13:12.622Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T08:13:12.626Z] [INFO] Alert created with ID: 393
+[2025-05-06T08:13:12.627Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T08:13:12.628Z] [INFO] Alert created with ID: 394
+[2025-05-06T08:14:12.583Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T08:14:12.620Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T08:14:12.623Z] [INFO] Alert created with ID: 395
+[2025-05-06T08:14:12.624Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T08:14:12.625Z] [INFO] Alert created with ID: 396
+[2025-05-06T08:15:12.585Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T08:15:12.632Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T08:15:12.641Z] [INFO] Alert created with ID: 397
+[2025-05-06T08:15:12.643Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T08:15:12.644Z] [INFO] Alert created with ID: 398
+[2025-05-06T08:16:12.587Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T08:16:12.623Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T08:16:12.626Z] [INFO] Alert created with ID: 399
+[2025-05-06T08:16:12.627Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T08:16:12.628Z] [INFO] Alert created with ID: 400
+[2025-05-06T08:17:12.590Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T08:17:12.631Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T08:17:12.633Z] [INFO] Alert created with ID: 401
+[2025-05-06T08:17:12.634Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T08:17:12.635Z] [INFO] Alert created with ID: 402
+[2025-05-06T08:18:12.601Z] [INFO] Checking sensor values against alert thresholds
+[2025-05-06T08:18:12.638Z] [INFO] Creating alert: humidity is high at 89.0Percentage (threshold: 70Percentage)
+[2025-05-06T08:18:12.640Z] [INFO] Alert created with ID: 403
+[2025-05-06T08:18:12.641Z] [INFO] Creating alert: temperature is high at 37.0Celsius (threshold: 30Celsius)
+[2025-05-06T08:18:12.642Z] [INFO] Alert created with ID: 404

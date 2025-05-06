@@ -1,0 +1,22 @@
+{
+    "sourceFile": "backend/services/mqttService.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1746471702960,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1746471718508,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,19 +64,16 @@\n           if (deviceType === 'fan' || deviceType === 'light') {\r\n             const value = data.status === 'active' ? '1' : '0';\r\n             const adaTopic = `${process.env.ADA_USERNAME}/feeds/${deviceType}`;\r\n             this.adaClient.publish(adaTopic, value);\r\n-            logger.info(`Published to Adafruit IO - Topic: ${adaTopic}, Value: ${value}`);\r\n           }\r\n         }\r\n       } catch (e) {\r\n         // Không phải JSON hoặc không có cấu trúc mong đợi\r\n-        logger.warn(`Not a device control message: ${e.message}`);\r\n       }\r\n       \r\n       return true;\r\n     }\r\n-    logger.warn('MQTT not connected - message not published');\r\n     return false;\r\n   }\r\n   \r\n   subscribe(topic) {\r\n"
+                }
+            ],
+            "date": 1746471702960,
+            "name": "Commit-0",
+            "content": "// backend/services/mqttService.js\r\nconst mqtt = require('mqtt');\r\nconst logger = require('../utils/logger');\r\nrequire('dotenv').config();\r\n\r\nclass MQTTService {\r\n  constructor() {\r\n    // Kết nối đến broker MQTT local\r\n    this.client = mqtt.connect(process.env.MQTT_BROKER_URL || 'mqtt://localhost:1883');\r\n    \r\n    // Kết nối đến Adafruit IO\r\n    this.adaClient = mqtt.connect('mqtts://io.adafruit.com', {\r\n      username: process.env.ADA_USERNAME,\r\n      password: process.env.ADAFRUIT_IO_KEY\r\n    });\r\n    \r\n    this.client.on('connect', () => {\r\n      this.connected = true;\r\n    });\r\n    \r\n    this.adaClient.on('connect', () => {\r\n    });\r\n    \r\n    this.client.on('error', (err) => {\r\n      this.connected = false;\r\n    });\r\n    \r\n    this.adaClient.on('error', (err) => {\r\n    });\r\n  }\r\n  \r\n  connect() {\r\n    if (!this.connected) {\r\n      this.client = mqtt.connect(process.env.MQTT_BROKER_URL || 'mqtt://localhost:1883');\r\n      this.client.on('connect', () => {\r\n        this.connected = true;\r\n      });\r\n    }\r\n    return this.connected;\r\n  }\r\n  \r\n  disconnect() {\r\n    if (this.connected) {\r\n      this.client.end();\r\n      this.adaClient.end();\r\n      this.connected = false;\r\n    }\r\n    return !this.connected;\r\n  }\r\n  \r\n  publishMessage(topic, message) {\r\n    if (this.connected) {\r\n      this.client.publish(topic, message);\r\n      logger.info(`MQTT message published - Topic: ${topic}`);\r\n      \r\n      // Kiểm tra nếu đây là thông tin điều khiển thiết bị\r\n      try {\r\n        const data = JSON.parse(message);\r\n        if (data.device_id && data.status) {\r\n          // Lấy thông tin thiết bị từ message\r\n          const deviceType = topic.split('/')[2]; // Giả sử topic có dạng yolohome/devices/TYPE/control\r\n          \r\n          // Gửi trạng thái thiết bị lên Adafruit IO\r\n          if (deviceType === 'fan' || deviceType === 'light') {\r\n            const value = data.status === 'active' ? '1' : '0';\r\n            const adaTopic = `${process.env.ADA_USERNAME}/feeds/${deviceType}`;\r\n            this.adaClient.publish(adaTopic, value);\r\n            logger.info(`Published to Adafruit IO - Topic: ${adaTopic}, Value: ${value}`);\r\n          }\r\n        }\r\n      } catch (e) {\r\n        // Không phải JSON hoặc không có cấu trúc mong đợi\r\n        logger.warn(`Not a device control message: ${e.message}`);\r\n      }\r\n      \r\n      return true;\r\n    }\r\n    logger.warn('MQTT not connected - message not published');\r\n    return false;\r\n  }\r\n  \r\n  subscribe(topic) {\r\n    if (this.connected) {\r\n      this.client.subscribe(topic);\r\n      return true;\r\n    }\r\n    return false;\r\n  }\r\n  \r\n  unsubscribe(topic) {\r\n    if (this.connected) {\r\n      this.client.unsubscribe(topic);\r\n      return true;\r\n    }\r\n    return false;\r\n  }\r\n}\r\n\r\n// Sử dụng Singleton pattern để đảm bảo chỉ có một instance\r\nmodule.exports = new MQTTService();"
+        }
+    ]
+}
