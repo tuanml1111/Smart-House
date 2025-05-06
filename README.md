@@ -40,9 +40,11 @@
    ```env
    ADA_USERNAME=your_adafruit_username
    ADAFRUIT_IO_KEY=your_adafruit_io_key
+   ``` 
 
-   Navigate to the ESP_MQTT_SERVER directory and start the server:
-   ''bash 
-  cd ESP_MQTT_SERVER
-  npm start
+   Then, navigate to the `ESP_MQTT_SERVER` directory and start the server:
+    ```bash
+    cd ESP_MQTT_SERVER
+    npm start
+    ```
    
